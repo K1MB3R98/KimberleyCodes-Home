@@ -1,0 +1,44 @@
+// Base Styles
+
+html,
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 80%;
+    margin: 0 auto;
+    // border: 4px dashed gold;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    // border: 2px solid $white;
+    // background-color: $primary;
+    margin-top: 20px;
+    padding: 10px 20px;
+    line-height: 25px;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        // background-color: $white;
+        // border: 2px solid $primary;
+        // color: $black;
+        cursor: pointer;
+    }
+}

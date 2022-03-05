@@ -1,0 +1,23 @@
+// Styles for Navigation Bar
+
+nav {
+    // border: 3px solid greenyellow;
+    background-color: $white;
+    position: fixed;
+    padding: 30px 70px 0 0;
+    width: 80%;
+    height: 73px;
+    line-height: 2rem;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        // border: 2px solid fuchsia;
+        li {            
+            width: calc((100%/5) - 60px);
+            text-align: center;
+            h3 {
+                border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}

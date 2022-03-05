@@ -1,0 +1,30 @@
+// Form Styles
+
+form {
+    margin-bottom: 50px;
+    padding: 75px 50px 50px 50px;
+    background-color: $tertiary;
+    width: 50%;
+    textarea, 
+    input {
+        margin-top: 10px;
+        width: 100%;
+        background-color: $tertiary;
+        border: 2px solid $white;
+        line-height: 2rem;
+    }
+    textarea{
+        resize: none;
+    }
+    button {
+        border: 2px solid $white;
+        background-color: $tertiary;
+        width: 100%;
+        &:hover,
+        &:focus {
+            background-color: $white;
+            border: 2px solid $tertiary;
+            color: $tertiary;
+        }
+    }
+}

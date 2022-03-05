@@ -1,0 +1,22 @@
+// Footer Styles
+
+footer {
+    color: white;
+    text-align: center;
+    .wrapper {
+        background-color: black;
+        height: 100px;
+        padding: 20px;
+        line-height: 1.5;
+        i {
+            padding: 0 10px;
+            font-size: 1rem;
+            transition: 0.3s;
+            &:hover,
+            &:focus {
+                color: $quaternary;
+                cursor: pointer;
+            }
+        }
+    }
+}
