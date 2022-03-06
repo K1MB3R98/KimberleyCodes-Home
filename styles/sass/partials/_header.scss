@@ -1,12 +1,7 @@
 // Header Styles
 
-// header {
-//     border: 2px solid purple;
-//     height: 100vh;
-// }
-
 img {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,41 +11,6 @@ img {
 h1 {
     text-align: center;
 }
-
-// // Side Bar Styles - w/ flexbox
-// .sideBars {
-//     text-align: center;
-//     border: 2px solid red;
-//     margin: 0 auto;
-//     padding: 0;
-//     width: 100%;
-//     height: 100vh;
-//     position:fixed;
-//     top: 0;
-//     display: flex;
-//     justify-content: space-between;
-//     .nameBar {
-//         border: 2px solid blue;
-//         white-space: nowrap;
-//         width: 50%;
-//         height: 50px;
-//         margin: 25% 60% 0 0;
-//         transform: rotate(-90deg);
-//         // position: fixed;
-//         // top: 50%;
-//         // right: 0;
-//     }
-//     .titleBar {
-//         border: 2px solid green;
-//         white-space: nowrap;
-//         width: 50%;
-//         height: 50px;
-//         margin: 25% 0 0 0;
-//         transform: rotate(90deg);
-//         // position: fixed;
-//         // top: 50%;
-//         // left: 85%;
-//     }
 
 // Side Bar Styles
 .sideBars {
@@ -62,7 +22,7 @@ h1 {
         transform: rotate(-90deg);
         position: fixed;
         top: 50%;
-        left: 15px;
+        left: -75px;
     }
     .titleBar {
         // border: 2px solid green;
@@ -70,6 +30,6 @@ h1 {
         transform: rotate(90deg);
         position: fixed;
         top: 50%;
-        right: 30px;
+        right: -35px;
     }
 }

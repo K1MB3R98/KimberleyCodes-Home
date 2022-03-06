@@ -2,7 +2,54 @@ html {
     font-size: 125%;
 }
 
+body,
+p {
+    font-family: $bodyFont;
+    font-size: 1.2rem;
+}
+// FOLIO
+h1 {
+    font-family: $headingsFont;
+    font-size: 1.6rem;
+    letter-spacing: 0.6rem;
+    color: $black;
+}
+
+// Section Headings
+h2 {
+    font-family: $headingsFont;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+}
+
+// Name and Title
+h3 {
+    font-family: $headingsFont;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+// Navigation Bar
+h4 {
+    font-family: $headingsFont;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: $bodyFont;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
 a {
     text-decoration: none;
     color: $black;
+}
+ 
+button {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    font-weight: 400;
+    color: gold;
 }

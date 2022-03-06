@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@400;900&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -230,9 +231,53 @@ html {
   font-size: 125%;
 }
 
+body,
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.6rem;
+  color: #151514;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
 a {
   text-decoration: none;
   color: #151514;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: gold;
 }
 
 html,
@@ -242,6 +287,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
   margin: 0 auto;
   padding: 0;
@@ -273,31 +319,47 @@ button:hover, button:focus {
 }
 
 nav {
-  background-color: white;
-  position: fixed;
-  padding: 30px 70px 0 0;
-  width: 80%;
-  height: 73px;
-  line-height: 2rem;
-}
-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  line-height: 4rem;
+  background-color: white;
+  width: 100%;
+  padding: 0 12%;
+}
+nav h1 {
+  min-width: 200px;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 nav ul li {
-  width: calc(20% - 60px);
+  width: calc(20% - 80px);
   text-align: center;
+  width: 100px;
 }
-nav ul li h3 {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+nav ul li h4 {
+  border-bottom: 5px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav ul li h4:hover, nav ul li h4:focus {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
 img {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -317,7 +379,7 @@ h1 {
           transform: rotate(-90deg);
   position: fixed;
   top: 50%;
-  left: 15px;
+  left: -75px;
 }
 .sideBars .titleBar {
   white-space: nowrap;
@@ -325,16 +387,20 @@ h1 {
           transform: rotate(90deg);
   position: fixed;
   top: 50%;
-  right: 30px;
+  right: -35px;
 }
 
 .about {
-  padding: 100px 0;
-  height: 800px;
+  background-color: #d9f5e8;
+  margin: 100px 0;
+  padding: 75px 100px 100px 100px;
 }
 .about h2 {
-  margin: 75px 0;
+  margin: 75px 0 50px 0;
   text-align: center;
+}
+.about p {
+  margin-top: 25px;
 }
 
 .aboutFlex {
@@ -347,26 +413,67 @@ h1 {
   width: 100%;
 }
 .aboutFlex .aboutText {
-  width: calc(35% - 10px);
-  height: 375px;
-  margin: 50px 25px;
-  padding: 50px;
-  background-color: #d1f7c0;
+  width: 70%;
+  line-height: 1.5;
+  padding: 25px 50px 25px 0;
 }
-.aboutFlex .aboutText h3 {
-  margin-bottom: 25px;
+.aboutFlex .aboutText hr {
+  margin-top: 25px;
+  width: 400px;
+  border: transparent;
+  border-top: 10px dotted rgba(32, 178, 171, 0.644);
 }
 .aboutFlex .photo {
-  width: calc(50% - 10px);
+  width: 30%;
 }
 .aboutFlex .photo img {
   width: 100%;
   height: auto;
   background-position: cover;
+  -webkit-box-shadow: 10px 10px 10px grey;
+          box-shadow: 10px 10px 10px grey;
+}
+
+.tools {
+  margin-top: 25px;
+  text-align: center;
+}
+.tools h3 {
+  padding-bottom: 5px;
+  width: 150px;
+  border-bottom: 2px solid rgba(32, 178, 171, 0.644);
+}
+.tools .toolsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tools .toolsFlex li {
+  width: 100px;
+  margin-top: 20px;
+  text-align: center;
+}
+.tools .toolsFlex li i {
+  font-size: 2rem;
+}
+.tools .toolsFlex li img {
+  width: 35px;
+  height: auto;
+}
+.tools .toolsFlex li p {
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 .projects {
-  padding: 100px 0;
+  border: 10px solid rgba(248, 225, 95, 0.788);
+  margin: 100px 0;
+  padding: 75px 100px 100px 100px;
 }
 .projects h2 {
   margin: 75px 0;
@@ -402,8 +509,8 @@ h1 {
 }
 
 .contact {
-  border: 2px solid lawngreen;
-  padding-top: 100px;
+  margin-top: 100px;
+  padding: 75px 100px 100px 100px;
 }
 .contact h2 {
   margin: 75px 0;

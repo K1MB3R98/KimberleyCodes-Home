@@ -2,49 +2,79 @@
 
 // About Styles
 .about {
-    // border: 2px solid royalblue;
-    // background-color: rgba(224, 245, 201, 0.644);
-    padding: 100px 0;
-    height: 800px;
+    background-color: $secondary;
+    margin: 100px 0;
+    padding: 75px 100px 100px 100px;
     h2 {
-        margin: 75px 0;
+        margin: 75px 0 50px 0;
         text-align: center;
+    }
+    p {
+        margin-top: 25px;
     }
 }
 .aboutFlex {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    // border: 2px solid orange;
     .aboutText {
-        width: calc(35% - 10px);
-        height: 375px;
-        // border: 2px solid red;
-        margin: 50px 25px;
-        padding: 50px;
-        background-color: $secondary;
-        // box-shadow: 10px 10px 10px grey;
-        // transform: rotate(-3deg);
-        h3 {
-            margin-bottom: 25px;
+        width: 70%;
+        line-height: 1.5;
+        padding: 25px 50px 25px 0;
+        hr {
+            margin-top: 25px;
+            width: 400px;
+            border: transparent;
+            border-top: 10px dotted $secondaryHighlight;
         }
     }
     .photo {
-        width: calc(50% - 10px);
-        // border: 4px dotted green;
+        width: 30%;
         img {
             width: 100%;
             height: auto;
             background-position: cover;
-            // box-shadow: 10px 10px 10px grey;
+            box-shadow: 10px 10px 10px grey;
+        }
+    }
+}
+.tools {
+    margin-top: 25px;
+    text-align: center;
+    h3 {
+        padding-bottom: 5px;
+        width: 150px;
+        border-bottom: 2px solid $secondaryHighlight;
+    }
+    .toolsFlex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+            width: 100px;
+            margin-top: 20px;
+            text-align: center;
+            i {
+                font-size: 2rem;
+            }
+            img {
+                width: 35px;
+                height: auto;
+            }
+            p {
+                font-size: 0.8rem;
+                margin-top: 10px;
+            }
         }
     }
 }
 
+
 // Projects Styles
 .projects {
-    // border: 2px solid rebeccapurple;
-    padding: 100px 0;
+    border: 10px solid $primary;
+    margin: 100px 0;
+    padding: 75px 100px 100px 100px;
     h2 {
         margin: 75px 0;
         text-align: center;
@@ -80,8 +110,9 @@
 
 // Contact Styles
 .contact {
-    border: 2px solid lawngreen;
-    padding-top: 100px;
+    // border: 2px solid lawngreen;
+    margin-top: 100px;
+    padding: 75px 100px 100px 100px;
     h2 {
         margin: 75px 0;
         text-align: center;

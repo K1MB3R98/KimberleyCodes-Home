@@ -1,22 +1,32 @@
 // Styles for Navigation Bar
 
 nav {
-    // border: 3px solid greenyellow;
-    background-color: $white;
+    display: flex;
+    justify-content: space-between;
     position: fixed;
-    padding: 30px 70px 0 0;
-    width: 80%;
-    height: 73px;
-    line-height: 2rem;
+    line-height: 4rem;
+    background-color: $white;
+    width: 100%;
+    padding: 0 12%;
+    h1 {
+        min-width: 200px;
+    }
     ul {
         display: flex;
-        justify-content: space-between;
-        // border: 2px solid fuchsia;
+        justify-content: space-evenly;
+        width: 100%;
         li {            
-            width: calc((100%/5) - 60px);
+            width: calc((100%/5) - 80px);
             text-align: center;
-            h3 {
-                border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+            width: 100px;
+            h4 {
+                border-bottom: 5px solid transparent;
+                transition: 0.3s;
+                &:hover,
+                &:focus {
+                    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+                    cursor: pointer;
+                }
             }
         }
     }
