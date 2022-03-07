@@ -1,35 +1,41 @@
 // Header Styles
-
-img {
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+header {
+    img {
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    // Scroll Down Prompt
+    i {
+        width: 100%;
+        margin-top: 25px;
+        color: pink;
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
-h1 {
-    text-align: center;
-}
 
 // Side Bar Styles
 .sideBars {
     text-align: center;
-    // border: 2px solid red;
     .nameBar {
-        // border: 2px solid blue;
         white-space: nowrap;
         transform: rotate(-90deg);
         position: fixed;
         top: 50%;
-        left: -75px;
+        left: 0px;
     }
     .titleBar {
-        // border: 2px solid green;
         white-space: nowrap;
         transform: rotate(90deg);
         position: fixed;
         top: 50%;
-        right: -35px;
+        right: 25px;
     }
 }

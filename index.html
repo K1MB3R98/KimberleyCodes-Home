@@ -13,10 +13,7 @@
 </head>
 
 <body>
-    <header id="home">
-        <!-- Page Title -->
-        <!-- <h1>FOLIO</h1> -->
-        
+    <header id="home">       
         <!-- Navigation Bar -->
         <nav>
             <ul>
@@ -30,21 +27,24 @@
             </ul>
         </nav>
         
-            <!-- Header Image -->
-            <div class="wrapper">
-                <img src="./assets/header-img.jpeg" alt="Close up of two pink flowers in a clear glass vase on a pink packground.">
-            </div>
-            <!-- End: Wrapper -->
-
         <!-- Name and Title Side Bars -->
         <section class="sideBars">
             <div class="nameBar">
                 <h3>Kimberley Schubert</h3>
             </div>
             <div class="titleBar">
+                <h3>Front-End</h3>
                 <h3>Web Developer</h3>
             </div>
         </section>
+        
+        <!-- Header Image -->
+        <div class="wrapper">
+            <img src="./assets/header-img.jpeg" alt="Close up of two pink flowers in a clear glass vase on a pink packground.">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <!-- End: Wrapper -->
+
     </header>
 
     <main>
@@ -54,7 +54,7 @@
                 <h2>ABOUT</h2>
                 <div class="aboutFlex">
                     <div class="aboutText">
-                        <h5>Hello, my name is Kimberley. <br> I'm a Web Developer.</h5> 
+                        <h5>Hello, my name is Kimberley. <br> I'm a front-end web developer.</h5> 
                         <hr>
                         <p>I am a highly curious, analytical, and imaginative front-end developer with a background in Education, English, and Music. I enjoy combining my creativity, research, and problem-solving skills with my experience to build accessible and responsive applications using HTML5, CSS3, JavaScript, and API integrations.</p>
                     </div>
@@ -96,16 +96,16 @@
                             <p>Firebase</p>
                         </li>
                         <li>
+                            <img src="./assets/icons/vsCodeIcon.png">
+                            <p>VS Code</p>
+                        </li>
+                        <li>
                             <i class="fab fa-github"></i>
                             <p>Github</p>
                         </li>
                         <li>
                             <i class="fas fa-terminal"></i>
                             <p>Terminal</p>
-                        </li>
-                        <li>
-                            <img src="./assets/icons/vsCodeIcon.png">
-                            <p>VS Code</p>
                         </li>
                         <li>
                             <i class="fas fa-mobile-alt"></i>
@@ -125,78 +125,92 @@
             <section class="projects" id="projects">
                 <h2>PROJECTS</h2>
                 <ul>
-                    <li>
-                        <img src="./assets/proj01.jpeg" alt="">
-                        <h3>Project A</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, itaque!</p>
-                        <div class="madeWithIcons">
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
+                    <li class="project">
+                        <img src="./assets/projects/SanctuaryHelpers.png" alt="A screenshot of the homepage for the Sanctuary Helpers project">
+                        <div class="infoOverlay">
+                            <h3>Sanctuary Helpers</h3>
+                            <hr>
+                            <p>A PSD conversion created for Juno College's Web Dev Bootcamp. Now with working Blog page comments section!</p>
+                            <div class="madeWithIcons">
+                                <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
+                                <i class="fab fa-sass" aria-hidden="true" title="Sass"></i>
+                                <i class="fab fa-js" aria-hidden="true" title="JavaScript"></i>
+                            </div>
+                            <button><a href="">View Live</a></button>
+                            <button><a href="">View Git</a></button>
                         </div>
-                        <button><a href="">View Live</a></button>
-                        <button><a href="">View Git</a></button>
                     </li>
-                    <li>
-                        <img src="./assets/proj01.jpeg" alt="">
-                        <h3>Project B</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, itaque!</p>
-                        <div class="madeWithIcons">
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
+                    <li class="project">
+                        <img src="./assets/projects/WeatherApp.png" alt="A screenshot of the 5-Day Weather Forecast webb app.">
+                        <div class="infoOverlay">
+                            <h3>5-Day Weather Forecast</h3>
+                            <hr>
+                            <p>Use this web app to check your local 5-day forecast! This project was created in Juno College's JavaScript ConEd course.</p>
+                            <div class="madeWithIcons">
+                                <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
+                                <i class="fab fa-js" aria-hidden="true" title="JavaScript"></i>
+                                <img class="toolImg" src="./assets/icons/jqueryIcon.png" aria-hidden="true" title="jQuery">
+                            </div>
+                            <button><a href="">View Live</a></button>
+                            <button><a href="">View Git</a></button>
                         </div>
-                        <button><a href="">View Live</a></button>
-                        <button><a href="">View Git</a></button>
                     </li>
-                    <li>
-                        <img src="./assets/proj01.jpeg" alt="">
-                        <h3>Project C</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, itaque!</p>
-                        <div class="madeWithIcons">
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
+                    <li class="project">
+                        <img src="./assets/projects/MovieMood.png" alt="A screenshot of the Movie Mood project.">
+                        <div class="infoOverlay">
+                            <h3>Movie Mood</h3>
+                            <hr>
+                            <p>In the mood for a movie and need some suggestions? This paired programming project was completed for Juno College's Web Dev Bootcamp. </p>
+                            <div class="madeWithIcons">
+                                <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
+                                <i class="fab fa-sass" aria-hidden="true" title="Sass"></i>
+                                <i class="fab fa-js" aria-hidden="true" title="JavaScript"></i>
+                            </div>
+                            <button><a href="">View Live</a></button>
+                            <button><a href="">View Git</a></button>
                         </div>
-                        <button><a href="">View Live</a></button>
-                        <button><a href="">View Git</a></button>
                     </li>
-                    <li>
-                        <img src="./assets/proj01.jpeg" alt="">
-                        <h3>Project Coming Soon!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, itaque!</p>
-                        <div class="madeWithIcons">
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
+                    <li class="project">
+                        <img src="./assets/projects/proj01.jpeg" alt="A stand-in picture of a desk and chair.">
+                        <div class="infoOverlay">
+                            <h3>Coming Soon!</h3>
+                            <hr>
+                            <p>Soon, this space will be filled by a newly completed project! Please visit again to see it!</p>
+                            <div class="madeWithIcons">
+                                <!-- This will be populated in the future once new projects are added -->
+                            </div>
+                            <button class="disabled"><a href="">View Live</a></button>
+                            <button class="disabled"><a href="">View Git</a></button>
                         </div>
-                        <button><a href="">View Live</a></button>
-                        <button><a href="">View Git</a></button>
                     </li>
-                    <li>
-                        <img src="./assets/proj01.jpeg" alt="">
-                        <h3>Project Coming Soon!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, itaque!</p>
-
-                        <div class="madeWithIcons">
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
+                    <li class="project">
+                        <img src="./assets/projects/proj01.jpeg" alt="A stand-in picture of a desk and chair.">
+                        <div class="infoOverlay">
+                            <h3>Coming Soon!</h3>
+                            <hr>
+                            <p>Soon, this space will be filled by a newly completed project! Please visit again to see it!</p>
+                            <div class="madeWithIcons">
+                                <!-- This will be populated in the future once new projects are added -->
+                            </div>
+                            <button class="disabled"><a href="">View Live</a></button>
+                            <button class="disabled"><a href="">View Git</a></button>
                         </div>
-                        <button><a href="">View Live</a></button>
-                        <button><a href="">View Git</a></button>
                     </li>
-                    <li>
-                        <img src="./assets/proj01.jpeg" alt="">
-                        <h3>Project Coming Soon!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, itaque!</p>
-                        <div class="madeWithIcons">
-                            <i class="fab fa-js"></i>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
+                    <li class="project">
+                        <img src="./assets/projects/proj01.jpeg" alt="A stand-in picture of a desk and chair.">
+                        <div class="infoOverlay">
+                            <h3>Coming Soon!</h3>
+                            <hr>
+                            <p>Soon, this space will be filled by a newly completed project! Please visit again to see it!</p>
+                            <div class="madeWithIcons">
+                                <!-- This will be populated in the future once new projects are added. -->
+                            </div>
+                            <button class="disabled"><a href="">View Live</a></button>
+                            <button class="disabled"><a href="">View Git</a></button>
                         </div>
-                        <button><a href="">View Live</a></button>
-                        <button><a href="">View Git</a></button>
                     </li>
                 </ul>
             </section>
@@ -209,17 +223,19 @@
                     <div class="contactTextAndSocials">
                         <div class="contactText">
                             <h5>Get in touch.</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit minima dolorem fugit error, minus in quod reiciendis adipisci non?</p>
+                            <hr>
+                            <p>Hey, thanks for stopping by! If you have any questions about me or my projects, you can use the handy form to your right, or feel free to use the email and social media links, below.</p>
                         </div>
-                        <div class="contactSocials">
-                            <i class="far fa-envelope"></i>
-                            <i class="fab fa-linkedin"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-github"></i>
-                        </div>
+                        <ul class="contactSocials">
+                            <li><a href="mailto:kimberley.schubert@gmail.com"><i class="far fa-envelope"></a></i></li>
+                            <li><a href="https://www.linkedin.com/in/kimberley-schubert"><i class="fab fa-linkedin"></a></i></li>
+                            <li><a href="https://twitter.com/KimberleyCodes"><i class="fab fa-twitter"></a></i></li>
+                            <li><a href="https://github.com/K1MB3R98"><i class="fab fa-github"></a></i></li>
+                        </ul>
                     </div>
                     <form>
                         <div class="formFlex">
+                            <p>I'll get back to you soon!</p>
                             <label for="name" class="sr-only">Name</label>
                             <input type="text" id="name" placeholder="Name:">
                             
@@ -244,10 +260,12 @@
     <footer>
         <div class="wrapper">
             <p>© Kimberley Schubert</p>
-            <i class="far fa-envelope"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-github"></i>
+            <ul class="contactIcons">
+                <li><a href="mailto:kimberley.schubert@gmail.com"><i class="far fa-envelope"></a></i></li>
+                <li><a href="https://www.linkedin.com/in/kimberley-schubert"><i class="fab fa-linkedin"></a></i></li>
+                <li><a href="https://twitter.com/KimberleyCodes"><i class="fab fa-twitter"></a></i></li>
+                <li><a href="https://github.com/K1MB3R98"><i class="fab fa-github"></a></i></li>
+            </ul>
         </div>
     </footer>
 </body>

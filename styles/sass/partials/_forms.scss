@@ -1,30 +1,39 @@
 // Form Styles
 
 form {
-    margin-bottom: 50px;
-    padding: 75px 50px 50px 50px;
+    padding: 125px 50px 25px 100px;
     background-color: $tertiary;
     width: 50%;
+    color: $white;
+    text-align: left;
     textarea, 
     input {
-        margin-top: 10px;
-        width: 100%;
+        margin-top: 25px;
+        width: 70%;
         background-color: $tertiary;
-        border: 2px solid $white;
-        line-height: 2rem;
+        border: transparent;
+        border-bottom: 3px solid $white;
+        line-height: 2.5rem;
+        font-size: 1rem;
+        font-weight: 900;
+        &::placeholder {
+            color: $white;
+            opacity: 1;
+        }
     }
     textarea{
         resize: none;
     }
     button {
-        border: 2px solid $white;
-        background-color: $tertiary;
-        width: 100%;
+        margin-top: 50px;
+        color: $black;
+        border: 3px solid $white;
+        background-color: $tertiaryHighlight;
+        min-width: 40%;
         &:hover,
         &:focus {
             background-color: $white;
-            border: 2px solid $tertiary;
-            color: $tertiary;
+            border: 3px solid $tertiaryHighlight;
         }
     }
 }

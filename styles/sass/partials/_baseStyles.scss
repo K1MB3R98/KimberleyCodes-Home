@@ -17,7 +17,6 @@ p {
     max-width: 1260px;
     width: 80%;
     margin: 0 auto;
-    // border: 4px dashed gold;
 }
 
 li {
@@ -26,20 +25,15 @@ li {
 
 a {
     text-decoration: none;
+    color: $black;
 }
 
 button {
-    // border: 2px solid $white;
-    // background-color: $primary;
-    margin-top: 20px;
     padding: 10px 20px;
     line-height: 25px;
     transition: 0.3s;
     &:hover,
     &:focus {
-        // background-color: $white;
-        // border: 2px solid $primary;
-        // color: $black;
         cursor: pointer;
     }
 }

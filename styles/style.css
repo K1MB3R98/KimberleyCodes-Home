@@ -268,11 +268,6 @@ h5 {
   font-weight: 900;
 }
 
-a {
-  text-decoration: none;
-  color: #151514;
-}
-
 button {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -305,10 +300,10 @@ li {
 
 a {
   text-decoration: none;
+  color: #151514;
 }
 
 button {
-  margin-top: 20px;
   padding: 10px 20px;
   line-height: 25px;
   -webkit-transition: 0.3s;
@@ -358,15 +353,21 @@ nav ul li h4:hover, nav ul li h4:focus {
   cursor: pointer;
 }
 
-img {
+header img {
   height: 90vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-h1 {
+header h1 {
+  text-align: center;
+}
+header i {
+  width: 100%;
+  margin-top: 25px;
+  color: pink;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -379,7 +380,7 @@ h1 {
           transform: rotate(-90deg);
   position: fixed;
   top: 50%;
-  left: -75px;
+  left: 0px;
 }
 .sideBars .titleBar {
   white-space: nowrap;
@@ -387,7 +388,7 @@ h1 {
           transform: rotate(90deg);
   position: fixed;
   top: 50%;
-  right: -35px;
+  right: 25px;
 }
 
 .about {
@@ -415,13 +416,13 @@ h1 {
 .aboutFlex .aboutText {
   width: 70%;
   line-height: 1.5;
-  padding: 25px 50px 25px 0;
+  padding: 25px 75px 25px 0;
 }
 .aboutFlex .aboutText hr {
   margin-top: 25px;
   width: 400px;
   border: transparent;
-  border-top: 10px dotted rgba(32, 178, 171, 0.644);
+  border-top: 1px solid rgba(32, 178, 171, 0.644);
 }
 .aboutFlex .photo {
   width: 30%;
@@ -436,26 +437,23 @@ h1 {
 
 .tools {
   margin-top: 25px;
+  padding: 25px;
+  border: 1px solid rgba(32, 178, 171, 0.644);
   text-align: center;
 }
 .tools h3 {
-  padding-bottom: 5px;
+  padding: 10px 0;
   width: 150px;
   border-bottom: 2px solid rgba(32, 178, 171, 0.644);
 }
 .tools .toolsFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 .tools .toolsFlex li {
   width: 100px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 .tools .toolsFlex li i {
@@ -479,11 +477,35 @@ h1 {
   margin: 75px 0;
   text-align: center;
 }
+.projects h3 {
+  height: 50px;
+}
+.projects p {
+  height: 150px;
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.projects hr {
+  width: 60%;
+  border: transparent;
+  border-top: 3px solid rgba(248, 225, 95, 0.788);
+}
 .projects img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.projects ul {
+.projects .toolImg {
+  height: 20px;
+  width: auto;
+}
+.projects .madeWithIcons {
+  height: 30px;
+}
+
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,97 +515,175 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.projects ul li {
-  margin-bottom: 50px;
-  width: calc(33.3333333333% - 40px);
+ul .project {
+  margin-bottom: 30px;
+  width: calc(33.3333333333% - 20px);
+  height: 400px;
+  border: 1px solid rgba(248, 225, 95, 0.788);
   text-align: center;
+  position: relative;
 }
-.projects ul li button {
+ul .infoOverlay {
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+ul .infoOverlay:hover, ul .infoOverlay:focus {
+  opacity: 1;
+}
+ul .buttonFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul button {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 45%;
+  margin-top: 50px;
+  padding: 10px 0;
   border: 2px solid white;
   background-color: rgba(248, 225, 95, 0.788);
 }
-.projects ul li button:hover, .projects ul li button:focus {
+ul button:hover, ul button:focus {
   background-color: white;
   border: 2px solid rgba(248, 225, 95, 0.788);
   color: #151514;
 }
+ul .disabled {
+  opacity: 0.5;
+}
+ul .disabled:hover, ul .disabled:focus {
+  cursor: not-allowed;
+  border: 2px solid white;
+  background-color: rgba(248, 225, 95, 0.788);
+}
 
 .contact {
   margin-top: 100px;
-  padding: 75px 100px 100px 100px;
+  padding-top: 75px;
+  text-align: center;
 }
 .contact h2 {
-  margin: 75px 0;
+  margin: 50px 0;
   text-align: center;
+}
+.contact hr {
+  margin-top: 50px;
+  width: 200px;
+  border: transparent;
+  border-top: 1px solid #f3c4a9;
 }
 .contact p {
-  margin-bottom: 50px;
-}
-.contact .returnToTop {
-  text-align: center;
+  margin: 50px 0 50px 0;
+  text-align: left;
 }
 .contact .contactFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 100px;
 }
 .contact .contactTextAndSocials {
   width: 50%;
-  padding: 0 75px;
+  padding: 200px 75px 100px 75px;
 }
 .contact .contactTextAndSocials .contactSocials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  font-size: 35px;
-  color: #93b4f0;
 }
 .contact .contactTextAndSocials .contactSocials i {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 5px;
+  color: #f5a678;
+  font-size: 1.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .contact .contactTextAndSocials .contactSocials i:hover, .contact .contactTextAndSocials .contactSocials i:focus {
-  color: #bf9cec;
+  color: #f3c4a9;
+  font-size: 2rem;
   cursor: pointer;
 }
 .contact .returnToTop i {
-  width: 50px;
-  height: 50px;
-  font-size: 2rem;
-  color: #93b4f0;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-bottom: 5px;
+  color: rgba(32, 178, 171, 0.644);
+  font-size: 2.2rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .contact .returnToTop i:hover, .contact .returnToTop i:focus {
-  color: #bf9cec;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
 form {
-  margin-bottom: 50px;
-  padding: 75px 50px 50px 50px;
-  background-color: #93b4f0;
+  padding: 125px 50px 25px 100px;
+  background-color: #f3c4a9;
   width: 50%;
+  color: white;
+  text-align: left;
 }
 form textarea,
 form input {
-  margin-top: 10px;
-  width: 100%;
-  background-color: #93b4f0;
-  border: 2px solid white;
-  line-height: 2rem;
+  margin-top: 25px;
+  width: 70%;
+  background-color: #f3c4a9;
+  border: transparent;
+  border-bottom: 3px solid white;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+form textarea::-webkit-input-placeholder, form input::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+form textarea::-moz-placeholder, form input::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+form textarea:-ms-input-placeholder, form input:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+form textarea::-ms-input-placeholder, form input::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+form textarea::placeholder,
+form input::placeholder {
+  color: white;
+  opacity: 1;
 }
 form textarea {
   resize: none;
 }
 form button {
-  border: 2px solid white;
-  background-color: #93b4f0;
-  width: 100%;
+  margin-top: 50px;
+  color: #151514;
+  border: 3px solid white;
+  background-color: #f5a678;
+  min-width: 40%;
 }
 form button:hover, form button:focus {
   background-color: white;
-  border: 2px solid #93b4f0;
-  color: #93b4f0;
+  border: 3px solid #f5a678;
 }
 
 footer {
@@ -594,15 +694,33 @@ footer .wrapper {
   background-color: black;
   height: 100px;
   padding: 20px;
-  line-height: 1.5;
 }
-footer .wrapper i {
-  padding: 0 10px;
+footer p {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+footer .contactIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+footer .contactIcons li {
+  margin: 0 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+footer .contactIcons li a {
+  color: white;
   font-size: 1rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-footer .wrapper i:hover, footer .wrapper i:focus {
-  color: #bf9cec;
+footer .contactIcons li a:hover, footer .contactIcons li a:focus {
+  color: rgba(32, 178, 171, 0.644);
+  font-size: 1.5rem;
   cursor: pointer;
 }
