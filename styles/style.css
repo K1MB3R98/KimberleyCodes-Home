@@ -515,6 +515,9 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+ul .partner {
+  text-decoration: underline;
+}
 ul .project {
   margin-bottom: 30px;
   width: calc(33.3333333333% - 20px);
@@ -527,7 +530,7 @@ ul .infoOverlay {
   height: 100%;
   width: 100%;
   padding: 25px;
-  background-color: white;
+  background-color: #f2edfd;
   position: absolute;
   top: 0;
   left: 0;
