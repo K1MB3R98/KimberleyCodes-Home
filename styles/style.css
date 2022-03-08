@@ -248,6 +248,7 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.3rem;
+  text-shadow: 3px 2px white;
 }
 
 h3 {
@@ -356,9 +357,8 @@ nav ul li h4:hover, nav ul li h4:focus {
 header img {
   height: 90vh;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header h1 {
   text-align: center;
@@ -380,7 +380,7 @@ header i {
           transform: rotate(-90deg);
   position: fixed;
   top: 50%;
-  left: 0px;
+  left: -40px;
 }
 .sideBars .titleBar {
   white-space: nowrap;
@@ -388,7 +388,7 @@ header i {
           transform: rotate(90deg);
   position: fixed;
   top: 50%;
-  right: 25px;
+  right: -20px;
 }
 
 .about {
@@ -420,7 +420,7 @@ header i {
 }
 .aboutFlex .aboutText hr {
   margin-top: 25px;
-  width: 400px;
+  width: 60%;
   border: transparent;
   border-top: 1px solid rgba(32, 178, 171, 0.644);
 }
@@ -429,8 +429,9 @@ header i {
 }
 .aboutFlex .photo img {
   width: 100%;
-  height: auto;
-  background-position: cover;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-box-shadow: 10px 10px 10px grey;
           box-shadow: 10px 10px 10px grey;
 }
@@ -503,6 +504,7 @@ header i {
 }
 .projects .madeWithIcons {
   height: 30px;
+  margin-top: 10px;
 }
 
 ul {
@@ -530,7 +532,7 @@ ul .infoOverlay {
   height: 100%;
   width: 100%;
   padding: 25px;
-  background-color: #f2edfd;
+  background-color: #f6f4fa;
   position: absolute;
   top: 0;
   left: 0;
@@ -541,14 +543,7 @@ ul .infoOverlay {
 ul .infoOverlay:hover, ul .infoOverlay:focus {
   opacity: 1;
 }
-ul .buttonFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 ul button {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 45%;
   margin-top: 50px;
   padding: 10px 0;
@@ -726,4 +721,229 @@ footer .contactIcons li a:hover, footer .contactIcons li a:focus {
   color: rgba(32, 178, 171, 0.644);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .about .aboutFlex .aboutText {
+    width: 50%;
+  }
+  .about .aboutFlex .photo {
+    width: 50%;
+  }
+
+  .projects .project {
+    width: 50%;
+    height: 475px;
+    margin: 0;
+    border: none;
+  }
+}
+@media (max-width: 1300px) {
+  header .sideBars .nameBar {
+    left: -55px;
+  }
+  header .sideBars .titleBar {
+    right: -30px;
+  }
+
+  .about .aboutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .aboutFlex .aboutText {
+    width: 80%;
+    padding: 0;
+  }
+  .about .aboutFlex .photo {
+    width: 40%;
+    margin: 50px 0;
+  }
+
+  form {
+    padding: 75px;
+  }
+  form textarea,
+form input {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  header .sideBars .nameBar {
+    left: -75px;
+  }
+  header .sideBars .titleBar {
+    right: -50px;
+  }
+
+  .about .aboutFlex .photo {
+    width: 100%;
+  }
+
+  .projects ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects ul .project {
+    width: 75%;
+  }
+
+  .contactFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactFlexContainer .contactTextAndSocials {
+    width: 80%;
+    padding: 50px;
+  }
+
+  form {
+    width: 80%;
+    padding: 50px;
+  }
+  form textarea,
+form input {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  header .sideBars .nameBar {
+    left: -95px;
+  }
+  header .sideBars .titleBar {
+    right: -70px;
+  }
+
+  nav {
+    padding-top: 20px;
+    line-height: 1.5rem;
+  }
+
+  .about {
+    padding: 15px 100px 100px 100px;
+  }
+  .about h3 {
+    width: 100%;
+  }
+  .about h5 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
+  .about .aboutFlex .aboutText {
+    width: 100%;
+  }
+
+  .projects {
+    padding: 0;
+  }
+  .projects ul .project {
+    width: 70%;
+  }
+
+  .contact {
+    padding: 0;
+  }
+  .contact h2 {
+    margin: 25px;
+  }
+
+  form {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  header h3 {
+    text-shadow: 2px 1px white;
+    letter-spacing: 0.1rem;
+  }
+  header img {
+    height: 80vh;
+  }
+  header .sideBars .nameBar {
+    white-space: wrap;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    position: relative;
+    top: 20vh;
+    left: 0;
+  }
+  header .sideBars .titleBar {
+    white-space: wrap;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    position: relative;
+    top: 65vh;
+    left: 0;
+  }
+
+  nav h1 {
+    position: absolute;
+    top: -4rem;
+  }
+
+  .about {
+    padding: 50px;
+  }
+  .about h5 {
+    font-size: 1.5rem;
+  }
+
+  .projects ul .project {
+    width: 80%;
+    height: 450px;
+    margin-bottom: 600px;
+  }
+  .projects ul .infoOverlay {
+    height: 575px;
+    position: static;
+    opacity: 1;
+  }
+  .projects ul .infoOverlay p {
+    height: 225px;
+  }
+  .projects button {
+    margin: 10px auto;
+    width: 75%;
+  }
+}
+@media (max-width: 460px) {
+  .projects ul .project {
+    height: 275px;
+    margin-bottom: 675px;
+  }
+  .projects ul .infoOverlay {
+    height: 650px;
+  }
+  .projects ul .infoOverlay p {
+    height: 350px;
+    padding-top: 20px;
+  }
+  .projects ul .infoOverlay hr {
+    margin-top: 25px;
+  }
+
+  .contact .contactTextAndSocials {
+    padding: 50px 0;
+  }
+
+  form {
+    width: 100%;
+    padding: 25px;
+  }
 }

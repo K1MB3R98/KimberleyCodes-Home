@@ -21,19 +21,21 @@
         width: 70%;
         line-height: 1.5;
         padding: 25px 75px 25px 0;
+
         hr {
             margin-top: 25px;
-            width: 400px;
+            width: 60%;
             border: transparent;
             border-top: 1px solid $secondaryHighlight;
         }
     }
     .photo {
+
         width: 30%;
         img {
             width: 100%;
-            height: auto;
-            background-position: cover;
+            height: 100%;
+            object-fit: cover;
             box-shadow: 10px 10px 10px grey;
         }
     }
@@ -104,6 +106,7 @@
     }
     .madeWithIcons {
         height: 30px;
+        margin-top: 10px;
     }
 }
 ul {
@@ -136,11 +139,7 @@ ul {
             opacity: 1;
         }
     }
-    .buttonFlex {
-        display: flex;
-    }
     button {
-        flex-wrap: wrap;
         width: 45%;
         margin-top: 50px;
         padding: 10px 0;

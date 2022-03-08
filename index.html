@@ -174,6 +174,19 @@
                         </div>
                     </li>
                     <li class="project">
+                        <img src="./assets/projects/proj01.jpeg" alt="A stand-in picture of a desk and chair.">
+                        <div class="infoOverlay">
+                            <h3>Coming Soon!</h3>
+                            <hr>
+                            <p>Soon, this space will be filled by a newly completed project! Please visit again to see it!</p>
+                            <div class="madeWithIcons">
+                                <!-- This will be populated in the future once new projects are added -->
+                            </div>
+                            <button class="disabled"><a href="">View Live</a></button>
+                            <button class="disabled"><a href="">View Git</a></button>
+                        </div>
+                    </li>
+                    <li class="project">
                         <img src="./assets/projects/FootForward.jpg" alt="A stand-in picture of a desk and chair.">
                         <div class="infoOverlay">
                             <h3>Foot Forward</h3>
@@ -193,23 +206,12 @@
                             <hr>
                             <p>Soon, this space will be filled by a newly completed project! Please visit again to see it!</p>
                             <div class="madeWithIcons">
-                                <!-- This will be populated in the future once new projects are added -->
-                            </div>
-                            <button class="disabled"><a href="">View Live</a></button>
-                            <button class="disabled"><a href="">View Git</a></button>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img src="./assets/projects/proj01.jpeg" alt="A stand-in picture of a desk and chair.">
-                        <div class="infoOverlay">
-                            <h3>Coming Soon!</h3>
-                            <hr>
-                            <p>Soon, this space will be filled by a newly completed project! Please visit again to see it!</p>
-                            <div class="madeWithIcons">
                                 <!-- This will be populated in the future once new projects are added. -->
                             </div>
-                            <button class="disabled"><a href="">View Live</a></button>
-                            <button class="disabled"><a href="">View Git</a></button>
+                            <div class="buttonFlex">
+                                <button class="disabled"><a href="">View Live</a></button>
+                                <button class="disabled"><a href="">View Git</a></button>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -224,7 +226,7 @@
                         <div class="contactText">
                             <h5>Get in touch.</h5>
                             <hr>
-                            <p>Hey, thanks for stopping by! If you have any questions about me or my projects, you can use the handy form to your right, or feel free to use the email and social media links, below.</p>
+                            <p>Hey, thanks for stopping by! If you have any questions about me or my projects, you can use this handy form to contact me, or feel free to use the email and social media links, below.</p>
                         </div>
                         <ul class="contactSocials">
                             <li><a href="mailto:kimberley.schubert@gmail.com"><i class="far fa-envelope"></a></i></li>
@@ -233,7 +235,7 @@
                             <li><a href="https://github.com/K1MB3R98"><i class="fab fa-github"></a></i></li>
                         </ul>
                     </div>
-                    <form>
+                    <form action="https://formspree.io/f/xrgjkjed" method="POST">
                         <div class="formFlex">
                             <p>I'll get back to you soon!</p>
                             <label for="name" class="sr-only">Name</label>
@@ -245,7 +247,7 @@
                         <label for="message" class="sr-only">Message me</label>
                         <textarea name="message" id="message" placeholder="Message:"></textarea>
                         
-                        <button class="formButton">Submit</button>
+                        <button class="formButton" type="submit">Submit</button>
                     </form>
                 </div>
                 <div class="returnToTop">

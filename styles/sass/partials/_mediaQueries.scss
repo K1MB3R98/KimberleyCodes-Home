@@ -1,0 +1,293 @@
+// Devices with screens 1400px and smaller
+@media (max-width: 1400px) {
+    // About Styles
+    .about {
+        // padding: 50px;
+        .aboutFlex {
+            .aboutText {
+                width: 50%;
+            }
+            .photo {
+                width: 50%;
+            }
+        }
+    }
+
+    // Projects Styles
+    .projects {
+        .project {
+            width: calc(100%/2);
+            height: 475px;
+            margin: 0;
+            border: none;
+        }
+    }
+}
+
+// Devices with screens 1300 and smaller
+@media (max-width: 1300px) {
+    
+    // Header Styles
+    header {
+        .sideBars {
+            .nameBar {
+                left: -55px;
+            }
+            .titleBar {
+                right: -30px;
+            }
+        }
+    }
+
+    // About Styles
+    .about {
+        .aboutFlex {
+            flex-direction: column;
+            align-items: center;
+            .aboutText {
+                width: 80%;
+                padding: 0;                
+            }
+            .photo {
+                width: 40%;
+                margin: 50px 0;
+            }
+            
+        }
+    }
+
+    // Forms Styles
+    form {
+        padding: 75px;
+        textarea,
+        input {
+            width: 90%;
+        }
+    }
+}
+
+
+// Devices with screens 1000px and smaller
+@media (max-width: 1000px) {
+
+    // Header Styles
+    header {
+        .sideBars {
+            .nameBar {
+                left: -75px;
+            }
+            .titleBar {
+                right: -50px;
+            }
+        }
+    }
+
+    // About Styles
+    .about {
+        .aboutFlex {
+            .photo {
+                width: 100%;
+            }
+        }
+    }
+
+    // Projects Styles
+    .projects {
+        ul {
+            flex-direction: column;
+            align-items: center;
+            .project {
+                width: 75%;
+            }
+        }
+    }
+
+    // Contact Styles
+    .contactFlexContainer {
+        flex-direction: column;
+        align-items: center;
+        .contactTextAndSocials {
+            width: 80%;
+            padding: 50px;
+        }
+    }
+
+    // Forms Styles
+    form {
+        width: 80%;
+        padding: 50px;
+        textarea,
+        input {
+            width: 100%;
+        }
+    }
+}
+
+
+// Devices with screeens 800px and smaller
+@media (max-width: 800px) {
+    // Header Styles
+    header {
+        .sideBars {
+            .nameBar {
+                left: -95px;
+            }
+            .titleBar {
+                right: -70px;
+            }
+        }
+    }
+
+    // Navigation Bar Styles
+    nav {
+        padding-top: 20px;
+        line-height: 1.5rem;
+    }
+
+    // About Styles
+    .about {
+        padding: 15px 100px 100px 100px;
+        h3  {
+            width: 100%;
+        }
+        h5 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .aboutFlex {
+            .aboutText {
+                width: 100%;
+            }
+        }
+    }
+
+    // Projects Styles
+    .projects {
+        padding: 0;
+        ul {
+            .project {
+                width: 70%;
+            }
+        }
+    }
+
+    // Contact Styles
+    .contact {
+        padding: 0;
+        h2 {
+            margin: 25px;
+        }
+    }
+
+    // Forms Styles
+    form {
+        text-align: center;
+    }
+}
+
+
+// Devices with screens 580px and smaller
+@media (max-width: 580px) {
+    // Header Styles
+    header {
+        h3 {
+            text-shadow: 2px 1px $white;
+            letter-spacing: 0.1rem;
+        }
+        img {
+            height: 80vh;
+        }
+        .sideBars {
+            .nameBar {
+                white-space: wrap;
+                transform: rotate(0deg);
+                position: relative;
+                top: 20vh;
+                left: 0;
+            }
+            .titleBar {
+                white-space: wrap;
+                transform: rotate(0deg);
+                position: relative;
+                top: 65vh;
+                left: 0;
+            }
+        }
+    }
+
+    // Navigation Bar Styles
+    nav {
+        h1 {
+            position: absolute;
+            top: -4rem;
+        }
+    }
+
+    // About Styles
+    .about {
+        padding: 50px;
+        h5 {
+            font-size: 1.5rem;
+        }
+    }
+
+    // Projects Styles
+    .projects {
+        ul {
+            .project {
+                width: 80%;
+                height: 450px;
+                margin-bottom: 600px;
+            }
+            .infoOverlay {
+                height: 575px;
+                position: static;
+                opacity: 1;
+                p {
+                    height: 225px;
+                }
+            }
+        }
+        button {
+            margin: 10px auto;
+            width: 75%;
+        }
+    }
+}
+
+
+// Devices with screens 480px and smaller
+@media (max-width: 460px) {
+    // Projects Styles
+    .projects {
+        ul {
+            .project {
+                height: 275px;
+                margin-bottom: 675px;
+            }
+            .infoOverlay {
+                height: 650px;
+                p {
+                    height: 350px;
+                    padding-top: 20px;
+                }
+                hr {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+
+    // Contact Styles
+    .contact {
+        .contactTextAndSocials {
+            padding: 50px 0;
+        }
+    }
+    form {
+        width: 100%;
+        padding: 25px;
+    }
+}

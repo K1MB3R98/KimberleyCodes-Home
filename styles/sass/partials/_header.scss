@@ -3,9 +3,7 @@ header {
     img {
         height: 90vh;
         width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        object-fit: cover;
     }
     h1 {
         text-align: center;
@@ -29,13 +27,13 @@ header {
         transform: rotate(-90deg);
         position: fixed;
         top: 50%;
-        left: 0px;
+        left: -40px;
     }
     .titleBar {
         white-space: nowrap;
         transform: rotate(90deg);
         position: fixed;
         top: 50%;
-        right: 25px;
+        right: -20px;
     }
 }
