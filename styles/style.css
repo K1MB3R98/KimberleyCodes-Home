@@ -506,6 +506,10 @@ header i {
   height: 30px;
   margin-top: 10px;
 }
+.projects .madeWithIcons img {
+  width: 25px;
+  height: auto;
+}
 
 ul {
   display: -webkit-box;

@@ -107,6 +107,10 @@
     .madeWithIcons {
         height: 30px;
         margin-top: 10px;
+        img {
+            width: 25px;
+            height: auto;
+        }
     }
 }
 ul {
