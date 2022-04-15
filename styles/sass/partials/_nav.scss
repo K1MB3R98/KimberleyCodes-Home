@@ -4,12 +4,14 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    line-height: 4rem;
+    z-index: 10;
+    line-height: 2rem;
     background-color: $white;
     width: 100%;
     padding: 0 12%;
+    padding-top: 10px;
     h1 {
-        min-width: 200px;
+        min-width: 300px;
     }
     ul {
         display: flex;
@@ -19,14 +21,12 @@ nav {
             width: calc((100%/5) - 80px);
             text-align: center;
             width: 100px;
-            h4 {
-                border-bottom: 5px solid transparent;
-                transition: 0.3s;
-                &:hover,
-                &:focus {
-                    border-bottom: 5px solid rgba(0, 0, 0, 0.6);
-                    cursor: pointer;
-                }
+            border-bottom: 5px solid transparent;
+            transition: 0.3s;
+            &:hover,
+            &:focus {
+                border-bottom: 5px solid $secondaryHighlight;
+                cursor: pointer;
             }
         }
     }

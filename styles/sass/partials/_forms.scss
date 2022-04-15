@@ -1,21 +1,26 @@
 // Form Styles
 
 form {
-    padding: 125px 50px 25px 100px;
+    padding: 10px 50px 50px 100px;
     background-color: $tertiary;
     width: 50%;
     color: $white;
     text-align: left;
+    p {
+        text-shadow: 0 0 5px $tertiaryHighlight;
+    }
     textarea, 
     input {
         margin-top: 25px;
         width: 70%;
         background-color: $tertiary;
         border: transparent;
-        border-bottom: 3px solid $white;
+        border-bottom: 2px solid $white;
         line-height: 2.5rem;
         font-size: 1rem;
         font-weight: 900;
+        text-shadow: 0 0 5px $tertiaryHighlight;
+        letter-spacing: 0.2rem;
         &::placeholder {
             color: $white;
             opacity: 1;
@@ -26,6 +31,8 @@ form {
     }
     button {
         margin-top: 50px;
+        font-weight: 900;
+        letter-spacing: 0.1rem;
         color: $black;
         border: 3px solid $white;
         background-color: $tertiaryHighlight;

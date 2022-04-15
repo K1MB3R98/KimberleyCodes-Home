@@ -1,8 +1,22 @@
+// Devices with screens 1550px and smaller
+@media (max-width: 1550px) {
+    // Header Styles
+    header {
+        .sideBars {
+            .nameBar {
+                left: 5%;
+            }
+            .titleBar {
+                right: 1.5%;
+            }
+        }
+    }
+}
+
 // Devices with screens 1400px and smaller
 @media (max-width: 1400px) {
     // About Styles
     .about {
-        // padding: 50px;
         .aboutFlex {
             .aboutText {
                 width: 50%;
@@ -16,29 +30,50 @@
     // Projects Styles
     .projects {
         .project {
-            width: calc(100%/2);
-            height: 475px;
-            margin: 0;
-            border: none;
+            width: calc((100%/2) - 15px);
+            height: 500px;
+            button {
+                margin-top: 20px;
+            }
         }
     }
 }
 
 // Devices with screens 1300 and smaller
 @media (max-width: 1300px) {
-    
     // Header Styles
     header {
         .sideBars {
+            h6 {
+                font-size: 2rem;
+            }
             .nameBar {
-                left: -55px;
+                h6 {
+                    padding-left: 24vh;
+                }
             }
             .titleBar {
-                right: -30px;
+                right: 2.5%;
+                h6 {
+                    padding-left: 30vh;
+                }
+                .extraSpace {
+                    padding-left: 37vh;
+                }
             }
         }
     }
 
+    // Projects Styles
+    .projects {
+        .project {
+            height: 450px;
+            .titleAdjust2 {
+                padding-top: 0;
+            }
+        }
+    }
+        
     // About Styles
     .about {
         .aboutFlex {
@@ -58,7 +93,7 @@
 
     // Forms Styles
     form {
-        padding: 75px;
+        padding: 0 75px 50px 75px;
         textarea,
         input {
             width: 90%;
@@ -67,21 +102,93 @@
 }
 
 
-// Devices with screens 1000px and smaller
-@media (max-width: 1000px) {
+// Devices with screens 1200px and smaller
+@media (max-width: 1200px) {
+    .contact {
+        .contactTextAndSocials {
+            padding-top: 50px;
+        }
+    }
 
+    // Projects Styles
+    .projects {
+        .project {
+            height: 400px;
+        }
+    }
+}
+
+
+// Devices with screens 1120px and smaller
+@media (max-width: 1120px) {
+    h5 {
+        font-size: 2rem;
+    }
+}
+
+
+// Devices with screens 1108px and smaller
+@media (max-width: 1108px) {
+    // Projects Styles
+    .project {
+        .titleAdjust3 {
+            padding-top: 0;
+        }
+    }
+}
+
+
+// Devices with screens 1100px and smaller
+@media (max-width: 1100px) {
     // Header Styles
     header {
         .sideBars {
-            .nameBar {
-                left: -75px;
+            h6 {
+                font-size: 1.5rem;
             }
+            .nameBar {
+                left: 6.5%;
+                h6 {
+                    padding-left: 28vh;
+                }
+            }
+    
             .titleBar {
-                right: -50px;
+                right: 3.5%;
+    
+                h6 {
+                    padding-left: 33vh;
+                }
+    
+                .extraSpace {
+                    padding-left: 39vh;
+                }
             }
         }
     }
 
+    // Projects Styles
+    .projects {
+        .project {
+            height: 375px;
+        }
+    }
+}
+
+
+// Devices with screens 1086px and smaller
+@media (max-width: 1086px) {
+    // Projects Styles
+    .project {
+        .titleAdjust4 {
+            padding-top: 0;
+        }
+    }
+}
+
+
+// Devices with screens 1000px and smaller
+@media (max-width: 1000px) {
     // About Styles
     .about {
         .aboutFlex {
@@ -97,7 +204,15 @@
             flex-direction: column;
             align-items: center;
             .project {
-                width: 75%;
+                width: 65%;
+                height: 450px;
+                .titleAdjust3,
+                .titleAdjust4 {
+                    padding-top: 20px;
+                }
+                button {
+                    margin-top: 75px;
+                }
             }
         }
     }
@@ -124,20 +239,51 @@
 }
 
 
-// Devices with screeens 800px and smaller
-@media (max-width: 800px) {
-    // Header Styles
+// Devices with screens 900px and smaller
+@media (max-width: 900px) {  
+    // Header Styles  
     header {
         .sideBars {
             .nameBar {
-                left: -95px;
+                left: 8%;
             }
             .titleBar {
-                right: -70px;
+                right: 4%;
             }
         }
     }
+    
+    // Projects Styles
+    .projects {
+        ul {
+            .project {
+                width: 85%;
+                .titleAdjust2 {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
 
+
+// Devices with screens 844px and smaller
+@media (max-width: 844px) {
+    // Projects Styles
+    .projects {
+        ul {
+            .project {
+                .titleAdjust2 {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Devices with screeens 800px and smaller
+@media (max-width: 800px) {
     // Navigation Bar Styles
     nav {
         padding-top: 20px;
@@ -147,9 +293,6 @@
     // About Styles
     .about {
         padding: 15px 100px 100px 100px;
-        h3  {
-            width: 100%;
-        }
         h5 {
             font-size: 2rem;
         }
@@ -163,22 +306,9 @@
         }
     }
 
-    // Projects Styles
-    .projects {
-        padding: 0;
-        ul {
-            .project {
-                width: 70%;
-            }
-        }
-    }
-
     // Contact Styles
     .contact {
         padding: 0;
-        h2 {
-            margin: 25px;
-        }
     }
 
     // Forms Styles
@@ -188,46 +318,112 @@
 }
 
 
-// Devices with screens 580px and smaller
-@media (max-width: 580px) {
+// Devices with screens 750px and smaller
+@media (max-width: 750px) {
+    // Projects Styles
+    .projects {
+        margin-bottom: 75px;
+        ul {
+            .project {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+// Devices with screens 705px and smaller
+@media (max-width: 705px) {
+    // About Styles
+    .tools {
+        padding: 25px 0;
+    }
+}
+
+
+// Devices with screens 700px and smaller
+@media (max-width: 700px) {
+    // Navigation Bar Styles
+    nav {
+        h1 {
+            font-size: 1.2rem;
+            position: absolute;
+            top: 13vh;
+            left: calc(50% - 150px);
+        }
+    }
+
     // Header Styles
     header {
         h3 {
             text-shadow: 2px 1px $white;
             letter-spacing: 0.1rem;
         }
-        img {
-            height: 80vh;
-        }
         .sideBars {
             .nameBar {
-                white-space: wrap;
+                white-space: normal;
                 transform: rotate(0deg);
-                position: relative;
-                top: 20vh;
+                top: 62vh;
                 left: 0;
+                width: 100%;
+                padding: 0 15%;
+                text-align: center;
+                h6 {
+                    padding: 0;
+                    font-size: 2rem;
+                }
             }
             .titleBar {
-                white-space: wrap;
+                white-space: normal;
                 transform: rotate(0deg);
-                position: relative;
-                top: 65vh;
+                top: 77vh;
                 left: 0;
+                width: 100%;
+                padding: 0 20%;
+                text-align: center;
+                h6, 
+                .extraSpace {
+                    padding: 0;
+                    font-size: 1.2rem;
+                }
             }
         }
     }
+    
+    // Projects Styles
+    .projects {
+        padding: 0 75px;
+    }
+}
 
-    // Navigation Bar Styles
-    nav {
-        h1 {
-            position: absolute;
-            top: -4rem;
+
+// Devices with screens 645px and smaller
+@media (max-width: 645px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+
+// Devices with screens 618px and smaller
+@media (max-width: 618px) {
+    // Projects Styles
+    .projects {
+        ul {
+            .project {   
+                .titleAdjust3 {
+                    padding-top: 0;
+                }
+            }
         }
     }
+}
 
+// Devices with screens 580px and smaller
+@media (max-width: 580px) {
     // About Styles
     .about {
-        padding: 50px;
+        padding: 1px 50px 50px 50px;
         h5 {
             font-size: 1.5rem;
         }
@@ -235,46 +431,43 @@
 
     // Projects Styles
     .projects {
+        padding: 0 20px;
         ul {
             .project {
-                width: 80%;
-                height: 450px;
-                margin-bottom: 600px;
-            }
-            .infoOverlay {
-                height: 575px;
-                position: static;
-                opacity: 1;
-                p {
-                    height: 225px;
+                width: 100%;
+                .titleAdjust2,
+                .titleAdjust3 {
+                    padding-top: 20px;
                 }
             }
-        }
-        button {
-            margin: 10px auto;
-            width: 75%;
         }
     }
 }
 
 
-// Devices with screens 480px and smaller
-@media (max-width: 460px) {
+// Devices with screens 561px and smaller
+@media (max-width: 561px) {
     // Projects Styles
     .projects {
         ul {
             .project {
-                height: 275px;
-                margin-bottom: 675px;
-            }
-            .infoOverlay {
-                height: 650px;
-                p {
-                    height: 350px;
-                    padding-top: 20px;
+                .titleAdjust2 {
+                    padding-top: 0;
                 }
-                hr {
-                    margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+// Devices with screens 481px and smaller
+@media (max-width: 481px) {
+    // Projects Styles
+    .projects {
+        ul {
+            .project {
+                .titleAdjust3 {
+                    padding-top: 0;
                 }
             }
         }
@@ -289,5 +482,78 @@
     form {
         width: 100%;
         padding: 25px;
+    }
+}
+
+// Devices with screens 470px and smaller
+@media (max-width: 470px) {
+    // About Styles
+    .about {
+        padding: 25px;
+    }
+    // Projects Styles
+    .projects {
+        ul {
+            .project {
+                .titleAdjust4 {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Devices with screens 430px and smaller
+@media (max-width: 430px) {
+    // Projects Styles
+    .projects {
+        padding: 0 10px;
+        h4 {
+            position: absolute;
+            left: -1000px;
+        }
+        ul {
+            .project {
+                height: 490px;
+                img {
+                    opacity: 0;
+                }
+                .titleAdjust1 {
+                    height: 3.3rem;
+                }
+                .titleAdjust2 {
+                    padding-top: 20px;
+                    height: 3.6rem;
+                }
+                .titleAdjust3,
+                .titleAdjust4 {
+                    padding-top: 20px;
+                }
+                .titleAdjust5 {
+                    padding-top: 30px;
+                }
+                .infoOverlay {
+                    padding: 5px;
+                    opacity: 1;
+                }
+                .madeWithIcons img {
+                    opacity: 1;
+                }
+                h3 {
+                    padding-top: 10px;
+                }
+                p {
+                    height: auto;
+                }
+                hr {
+                    margin-top: 30px;
+                }
+                button {
+                    margin: 5px 0 5px 0;
+                    width: 80%;
+                }
+            } 
+        } 
     }
 }

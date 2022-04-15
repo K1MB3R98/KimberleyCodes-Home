@@ -239,16 +239,18 @@ p {
 
 h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: 0.6rem;
-  color: #151514;
+  font-weight: 400;
+  color: rgb(21, 21, 20);
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.3rem;
-  text-shadow: 3px 2px white;
+  text-shadow: 3px 2px rgb(255, 255, 255);
 }
 
 h3 {
@@ -267,6 +269,14 @@ h5 {
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
+}
+
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 button {
@@ -301,7 +311,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #151514;
+  color: rgb(21, 21, 20);
 }
 
 button {
@@ -322,13 +332,15 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  line-height: 4rem;
-  background-color: white;
+  z-index: 10;
+  line-height: 2rem;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   padding: 0 12%;
+  padding-top: 10px;
 }
 nav h1 {
-  min-width: 200px;
+  min-width: 300px;
 }
 nav ul {
   display: -webkit-box;
@@ -343,15 +355,17 @@ nav ul li {
   width: calc(20% - 80px);
   text-align: center;
   width: 100px;
-}
-nav ul li h4 {
   border-bottom: 5px solid transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-nav ul li h4:hover, nav ul li h4:focus {
-  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+nav ul li:hover, nav ul li:focus {
+  border-bottom: 5px solid rgba(32, 178, 171, 0.644);
   cursor: pointer;
+}
+
+body {
+  position: relative;
 }
 
 header img {
@@ -363,38 +377,67 @@ header img {
 header h1 {
   text-align: center;
 }
-header i {
-  width: 100%;
-  margin-top: 25px;
-  color: pink;
-  font-size: 2rem;
+header .toAbout {
   text-align: center;
+}
+header .toAbout i {
+  padding-top: 0.6rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 40px;
+  color: rgb(255, 197, 192);
+  font-size: 2.5rem;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .toAbout i:hover, header .toAbout i:focus {
+  font-size: 2.3rem;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-top: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(255, 197, 192);
+  color: rgb(255, 255, 255);
 }
 
-.sideBars {
-  text-align: center;
-}
 .sideBars .nameBar {
-  white-space: nowrap;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  white-space: nowrap;
   position: fixed;
-  top: 50%;
-  left: -40px;
+  bottom: 0;
+  left: 6%;
+  height: 10%;
+  width: 5%;
+}
+.sideBars .nameBar h6 {
+  margin: 0;
+  padding-left: 20vh;
 }
 .sideBars .titleBar {
-  white-space: nowrap;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  white-space: nowrap;
   position: fixed;
-  top: 50%;
-  right: -20px;
+  top: 0;
+  right: 2.5%;
+  height: 10%;
+  width: 5%;
+}
+.sideBars .titleBar h6 {
+  margin: 0;
+  padding-left: 25vh;
+}
+.sideBars .titleBar .extraSpace {
+  padding-left: 34vh;
 }
 
 .about {
-  background-color: #d9f5e8;
-  margin: 100px 0;
-  padding: 75px 100px 100px 100px;
+  background-color: rgb(217, 245, 232);
+  margin: 20px 0;
+  padding: 10px 100px 75px 100px;
 }
 .about h2 {
   margin: 75px 0 50px 0;
@@ -471,15 +514,22 @@ header i {
 
 .projects {
   border: 10px solid rgba(248, 225, 95, 0.788);
-  margin: 100px 0;
-  padding: 75px 100px 100px 100px;
+  margin: 75px 0 0 0;
+  padding: 0 100px;
 }
 .projects h2 {
-  margin: 75px 0;
+  margin: 75px 0 50px 0;
   text-align: center;
 }
 .projects h3 {
   height: 50px;
+  padding-top: 20px;
+}
+.projects h4 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1rem;
+  color: grey;
 }
 .projects p {
   height: 150px;
@@ -497,6 +547,9 @@ header i {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.projects .titleAdjust1 {
+  padding-top: 0;
 }
 .projects .toolImg {
   height: 20px;
@@ -522,7 +575,11 @@ ul {
           justify-content: space-between;
 }
 ul .partner {
+  font-weight: 600;
+}
+ul .partner:hover, ul .partner:focus {
   text-decoration: underline;
+  color: rgba(32, 178, 171, 0.644);
 }
 ul .project {
   margin-bottom: 30px;
@@ -536,7 +593,7 @@ ul .infoOverlay {
   height: 100%;
   width: 100%;
   padding: 25px;
-  background-color: #f6f4fa;
+  background-color: rgb(246, 244, 250);
   position: absolute;
   top: 0;
   left: 0;
@@ -551,26 +608,17 @@ ul button {
   width: 45%;
   margin-top: 50px;
   padding: 10px 0;
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   background-color: rgba(248, 225, 95, 0.788);
 }
 ul button:hover, ul button:focus {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: 2px solid rgba(248, 225, 95, 0.788);
-  color: #151514;
-}
-ul .disabled {
-  opacity: 0.5;
-}
-ul .disabled:hover, ul .disabled:focus {
-  cursor: not-allowed;
-  border: 2px solid white;
-  background-color: rgba(248, 225, 95, 0.788);
+  color: rgb(21, 21, 20);
 }
 
 .contact {
-  margin-top: 100px;
-  padding-top: 75px;
+  padding-top: 35px;
   text-align: center;
 }
 .contact h2 {
@@ -581,21 +629,21 @@ ul .disabled:hover, ul .disabled:focus {
   margin-top: 50px;
   width: 200px;
   border: transparent;
-  border-top: 1px solid #f3c4a9;
+  border-top: 1px solid rgb(243, 184, 150);
 }
 .contact p {
-  margin: 50px 0 50px 0;
+  margin: 50px 0 25px 0;
   text-align: left;
 }
 .contact .contactFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .contact .contactTextAndSocials {
   width: 50%;
-  padding: 200px 75px 100px 75px;
+  padding: 100px 75px 0 75px;
 }
 .contact .contactTextAndSocials .contactSocials {
   display: -webkit-box;
@@ -610,67 +658,72 @@ ul .disabled:hover, ul .disabled:focus {
   height: 2.5rem;
   width: 2.5rem;
   margin: 5px;
-  color: #f5a678;
+  color: rgb(245, 151, 98);
   font-size: 1.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .contact .contactTextAndSocials .contactSocials i:hover, .contact .contactTextAndSocials .contactSocials i:focus {
-  color: #f3c4a9;
+  color: rgb(243, 184, 150);
   font-size: 2rem;
   cursor: pointer;
 }
 .contact .returnToTop i {
-  width: 2.2rem;
-  height: 2.2rem;
-  margin-bottom: 5px;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 15px;
   color: rgba(32, 178, 171, 0.644);
-  font-size: 2.2rem;
+  font-size: 3rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .contact .returnToTop i:hover, .contact .returnToTop i:focus {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
 form {
-  padding: 125px 50px 25px 100px;
-  background-color: #f3c4a9;
+  padding: 10px 50px 50px 100px;
+  background-color: rgb(243, 184, 150);
   width: 50%;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: left;
+}
+form p {
+  text-shadow: 0 0 5px rgb(245, 151, 98);
 }
 form textarea,
 form input {
   margin-top: 25px;
   width: 70%;
-  background-color: #f3c4a9;
+  background-color: rgb(243, 184, 150);
   border: transparent;
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid rgb(255, 255, 255);
   line-height: 2.5rem;
   font-size: 1rem;
   font-weight: 900;
+  text-shadow: 0 0 5px rgb(245, 151, 98);
+  letter-spacing: 0.2rem;
 }
 form textarea::-webkit-input-placeholder, form input::-webkit-input-placeholder {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 form textarea::-moz-placeholder, form input::-moz-placeholder {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 form textarea:-ms-input-placeholder, form input:-ms-input-placeholder {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 form textarea::-ms-input-placeholder, form input::-ms-input-placeholder {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 form textarea::placeholder,
 form input::placeholder {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 form textarea {
@@ -678,21 +731,21 @@ form textarea {
 }
 form button {
   margin-top: 50px;
-  color: #151514;
-  border: 3px solid white;
-  background-color: #f5a678;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: rgb(21, 21, 20);
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(245, 151, 98);
   min-width: 40%;
 }
 form button:hover, form button:focus {
-  background-color: white;
-  border: 3px solid #f5a678;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(245, 151, 98);
 }
 
 footer {
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
-}
-footer .wrapper {
   background-color: black;
   height: 100px;
   padding: 20px;
@@ -716,7 +769,7 @@ footer .contactIcons li {
   height: 1.5rem;
 }
 footer .contactIcons li a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -727,6 +780,14 @@ footer .contactIcons li a:hover, footer .contactIcons li a:focus {
   cursor: pointer;
 }
 
+@media (max-width: 1550px) {
+  header .sideBars .nameBar {
+    left: 5%;
+  }
+  header .sideBars .titleBar {
+    right: 1.5%;
+  }
+}
 @media (max-width: 1400px) {
   .about .aboutFlex .aboutText {
     width: 50%;
@@ -736,18 +797,35 @@ footer .contactIcons li a:hover, footer .contactIcons li a:focus {
   }
 
   .projects .project {
-    width: 50%;
-    height: 475px;
-    margin: 0;
-    border: none;
+    width: calc(50% - 15px);
+    height: 500px;
+  }
+  .projects .project button {
+    margin-top: 20px;
   }
 }
 @media (max-width: 1300px) {
-  header .sideBars .nameBar {
-    left: -55px;
+  header .sideBars h6 {
+    font-size: 2rem;
+  }
+  header .sideBars .nameBar h6 {
+    padding-left: 24vh;
   }
   header .sideBars .titleBar {
-    right: -30px;
+    right: 2.5%;
+  }
+  header .sideBars .titleBar h6 {
+    padding-left: 30vh;
+  }
+  header .sideBars .titleBar .extraSpace {
+    padding-left: 37vh;
+  }
+
+  .projects .project {
+    height: 450px;
+  }
+  .projects .project .titleAdjust2 {
+    padding-top: 0;
   }
 
   .about .aboutFlex {
@@ -769,21 +847,62 @@ footer .contactIcons li a:hover, footer .contactIcons li a:focus {
   }
 
   form {
-    padding: 75px;
+    padding: 0 75px 50px 75px;
   }
   form textarea,
 form input {
     width: 90%;
   }
 }
-@media (max-width: 1000px) {
-  header .sideBars .nameBar {
-    left: -75px;
-  }
-  header .sideBars .titleBar {
-    right: -50px;
+@media (max-width: 1200px) {
+  .contact .contactTextAndSocials {
+    padding-top: 50px;
   }
 
+  .projects .project {
+    height: 400px;
+  }
+}
+@media (max-width: 1120px) {
+  h5 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1108px) {
+  .project .titleAdjust3 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 1100px) {
+  header .sideBars h6 {
+    font-size: 1.5rem;
+  }
+  header .sideBars .nameBar {
+    left: 6.5%;
+  }
+  header .sideBars .nameBar h6 {
+    padding-left: 28vh;
+  }
+  header .sideBars .titleBar {
+    right: 3.5%;
+  }
+  header .sideBars .titleBar h6 {
+    padding-left: 33vh;
+  }
+  header .sideBars .titleBar .extraSpace {
+    padding-left: 39vh;
+  }
+
+  .projects .project {
+    height: 375px;
+  }
+}
+@media (max-width: 1086px) {
+  .project .titleAdjust4 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 1000px) {
   .about .aboutFlex .photo {
     width: 100%;
   }
@@ -798,7 +917,15 @@ form input {
             align-items: center;
   }
   .projects ul .project {
-    width: 75%;
+    width: 65%;
+    height: 450px;
+  }
+  .projects ul .project .titleAdjust3,
+.projects ul .project .titleAdjust4 {
+    padding-top: 20px;
+  }
+  .projects ul .project button {
+    margin-top: 75px;
   }
 
   .contactFlexContainer {
@@ -824,14 +951,27 @@ form input {
     width: 100%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header .sideBars .nameBar {
-    left: -95px;
+    left: 8%;
   }
   header .sideBars .titleBar {
-    right: -70px;
+    right: 4%;
   }
 
+  .projects ul .project {
+    width: 85%;
+  }
+  .projects ul .project .titleAdjust2 {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 844px) {
+  .projects ul .project .titleAdjust2 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 800px) {
   nav {
     padding-top: 20px;
     line-height: 1.5rem;
@@ -839,9 +979,6 @@ form input {
 
   .about {
     padding: 15px 100px 100px 100px;
-  }
-  .about h3 {
-    width: 100%;
   }
   .about h5 {
     font-size: 2rem;
@@ -853,93 +990,110 @@ form input {
     width: 100%;
   }
 
-  .projects {
-    padding: 0;
-  }
-  .projects ul .project {
-    width: 70%;
-  }
-
   .contact {
     padding: 0;
-  }
-  .contact h2 {
-    margin: 25px;
   }
 
   form {
     text-align: center;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 750px) {
+  .projects {
+    margin-bottom: 75px;
+  }
+  .projects ul .project {
+    width: 100%;
+  }
+}
+@media (max-width: 705px) {
+  .tools {
+    padding: 25px 0;
+  }
+}
+@media (max-width: 700px) {
+  nav h1 {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 13vh;
+    left: calc(50% - 150px);
+  }
+
   header h3 {
-    text-shadow: 2px 1px white;
+    text-shadow: 2px 1px rgb(255, 255, 255);
     letter-spacing: 0.1rem;
   }
-  header img {
-    height: 80vh;
-  }
   header .sideBars .nameBar {
-    white-space: wrap;
+    white-space: normal;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    position: relative;
-    top: 20vh;
+    top: 62vh;
     left: 0;
+    width: 100%;
+    padding: 0 15%;
+    text-align: center;
+  }
+  header .sideBars .nameBar h6 {
+    padding: 0;
+    font-size: 2rem;
   }
   header .sideBars .titleBar {
-    white-space: wrap;
+    white-space: normal;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    position: relative;
-    top: 65vh;
+    top: 77vh;
     left: 0;
+    width: 100%;
+    padding: 0 20%;
+    text-align: center;
+  }
+  header .sideBars .titleBar h6,
+header .sideBars .titleBar .extraSpace {
+    padding: 0;
+    font-size: 1.2rem;
   }
 
-  nav h1 {
-    position: absolute;
-    top: -4rem;
+  .projects {
+    padding: 0 75px;
   }
-
+}
+@media (max-width: 645px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 618px) {
+  .projects ul .project .titleAdjust3 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 580px) {
   .about {
-    padding: 50px;
+    padding: 1px 50px 50px 50px;
   }
   .about h5 {
     font-size: 1.5rem;
   }
 
+  .projects {
+    padding: 0 20px;
+  }
   .projects ul .project {
-    width: 80%;
-    height: 450px;
-    margin-bottom: 600px;
+    width: 100%;
   }
-  .projects ul .infoOverlay {
-    height: 575px;
-    position: static;
-    opacity: 1;
-  }
-  .projects ul .infoOverlay p {
-    height: 225px;
-  }
-  .projects button {
-    margin: 10px auto;
-    width: 75%;
-  }
-}
-@media (max-width: 460px) {
-  .projects ul .project {
-    height: 275px;
-    margin-bottom: 675px;
-  }
-  .projects ul .infoOverlay {
-    height: 650px;
-  }
-  .projects ul .infoOverlay p {
-    height: 350px;
+  .projects ul .project .titleAdjust2,
+.projects ul .project .titleAdjust3 {
     padding-top: 20px;
   }
-  .projects ul .infoOverlay hr {
-    margin-top: 25px;
+}
+@media (max-width: 561px) {
+  .projects ul .project .titleAdjust2 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 481px) {
+  .projects ul .project .titleAdjust3 {
+    padding-top: 0;
   }
 
   .contact .contactTextAndSocials {
@@ -949,5 +1103,63 @@ form input {
   form {
     width: 100%;
     padding: 25px;
+  }
+}
+@media (max-width: 470px) {
+  .about {
+    padding: 25px;
+  }
+
+  .projects ul .project .titleAdjust4 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 430px) {
+  .projects {
+    padding: 0 10px;
+  }
+  .projects h4 {
+    position: absolute;
+    left: -1000px;
+  }
+  .projects ul .project {
+    height: 490px;
+  }
+  .projects ul .project img {
+    opacity: 0;
+  }
+  .projects ul .project .titleAdjust1 {
+    height: 3.3rem;
+  }
+  .projects ul .project .titleAdjust2 {
+    padding-top: 20px;
+    height: 3.6rem;
+  }
+  .projects ul .project .titleAdjust3,
+.projects ul .project .titleAdjust4 {
+    padding-top: 20px;
+  }
+  .projects ul .project .titleAdjust5 {
+    padding-top: 30px;
+  }
+  .projects ul .project .infoOverlay {
+    padding: 5px;
+    opacity: 1;
+  }
+  .projects ul .project .madeWithIcons img {
+    opacity: 1;
+  }
+  .projects ul .project h3 {
+    padding-top: 10px;
+  }
+  .projects ul .project p {
+    height: auto;
+  }
+  .projects ul .project hr {
+    margin-top: 30px;
+  }
+  .projects ul .project button {
+    margin: 5px 0 5px 0;
+    width: 80%;
   }
 }

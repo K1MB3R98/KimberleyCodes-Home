@@ -1,17 +1,11 @@
 // Footer Styles
 
-// footer {
-//     border: 2px solid $tertiary;
-// }
-
 footer {
     color: $white;
     text-align: center;
-    .wrapper {
-        background-color: black;
-        height: 100px;
-        padding: 20px;
-    }
+    background-color: black;
+    height: 100px;
+    padding: 20px;
     p {
         padding: 10px;
         font-size: 0.8rem;

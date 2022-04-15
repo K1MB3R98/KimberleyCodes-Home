@@ -20,7 +20,7 @@
                 <li><h4><a href="./index.html#home">HOME</a></h4></li>
                 <li><h4><a href="./index.html#about">ABOUT</a></h4></li>
             </ul>
-            <h1>FOLIO</h1>
+            <h1>PORTFOLIO</h1>
             <ul>
                 <li><h4><a href="./index.html#projects">PROJECTS</a></h4></li>
                 <li><h4><a href="./index.html#contact">CONTACT</a></h4></li>
@@ -30,18 +30,20 @@
         <!-- Name and Title Side Bars -->
         <section class="sideBars">
             <div class="nameBar">
-                <h3>Kimberley Schubert</h3>
+                <h6>Kimberley Schubert</h6>
             </div>
             <div class="titleBar">
-                <h3>Front-End</h3>
-                <h3>Web Developer</h3>
+                <h6 class="extraSpace" >Front-End</h6>
+                <h6>Web Developer</h6>
             </div>
         </section>
         
         <!-- Header Image -->
         <div class="wrapper">
-            <img src="./assets/header-img.jpeg" alt="Close up of two pink flowers in a clear glass vase on a pink packground.">
-            <i class="fas fa-chevron-down"></i>
+            <img src="./assets/header-img.jpeg" alt="Close up of two pink flowers in a clear glass bottle on a pink background.">
+            <div class="toAbout">
+                <a href="./index.html#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
         </div>
         <!-- End: Wrapper -->
 
@@ -56,7 +58,7 @@
                     <div class="aboutText">
                         <h5>Hello, my name is Kimberley. <br> I'm a front-end web developer.</h5> 
                         <hr>
-                        <p>I am a highly curious, analytical, and imaginative front-end developer with a background in Education, English, and Music. I enjoy combining my creativity, research, and problem-solving skills with my experience to build accessible and responsive applications using HTML5, CSS3, JavaScript, and API integrations.</p>
+                        <p>I am a highly curious, analytical, and imaginative front-end developer with a background in Education, English, and Music. I enjoy combining my creativity, research, and problem-solving skills with my experience to build accessible and responsive applications using HTML5, CSS3, JavaScript, React, and API integrations.</p>
                     </div>
                     <div class="photo">
                         <img src="./assets/photo.jpg" alt="A photo of me.">
@@ -124,100 +126,98 @@
             <!-- START: Projects -->
             <section class="projects" id="projects">
                 <h2>PROJECTS</h2>
+                <h4>Mouse over or tap a project for more information and links!</h4>
                 <ul>
                     <li class="project">
-                        <img src="./assets/projects/DetectivePokemon.png" alt="A screenshot this app. An anime-style HR person is greeting you.">
+                        <img src="./assets/projects/DetectivePokemon.png" alt="A screenshot of this app. An anime-style HR person is greeting you.">
                         <div class="infoOverlay">
-                            <h3>Pokémon Detective</h3>
+                            <h3 class="titleAdjust3">Pokémon Detective</h3>
                             <hr>
-                            <p>A group project using the UK Police and Pokémon APIs to create a game in which your chosen Pokémon companion helps you to solve real cases!</p>
+                            <p>A group project using JavaScript, React, the UK Police, and Pokémon APIs. Choose one of five random Pokémon companions to help you solve real cases!</p>
                             <div class="madeWithIcons">
                                 <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
                                 <i class="fab fa-react"></i>
                             </div>
-                            <div class="buttonFlex">
-                            <button><a href="https://detective-pokemon.netlify.app/">View Live</a></button>
-                            <button><a href="https://github.com/project-4-detective-pokemon">View Git</a></button>
-                            </div>
+                            <button><a href="https://detective-pokemon.netlify.app/ "target="_blank" rel="noopener noreferrer">View Live</a></button>
+                            <button><a href="https://github.com/project-4-detective-pokemon" target="_blank" rel="noopener noreferrer">View Git</a></button>
                         </div>
                     </li>
                     <li class="project">
                         <img src="./assets/projects/TBOS-inv-mgmt-app.png" alt="A screenshot of this app.">
                         <div class="infoOverlay">
-                            <h3>TBOS Inventory Management App</h3>
+                            <h3 class="titleAdjust1">TBOS Inventory Management</h3>
                             <hr>
-                            <p>This web app was built with React and Firebase for a local business to allow the owners to easily access and update their inventory at home or on-the-go via mobile.</p>
+                            <p>This web app was built with React and Firebase for a local business to allow  easy access for updating web-site inventory at home or on-the-go via mobile.</p>
                             <div class="madeWithIcons">
                                 <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
-                                <img class="projTool" src="./assets/icons/firebaseIcon.png" alt="Icon for Firebase.">
+                                <img class="toolImg" src="./assets/icons/firebaseIcon.png" alt="Icon for Firebase.">
                                 <i class="fab fa-react"></i>
                             </div>
-                            <button><a href="https://tbos-inventory-management-app.netlify.app/">View Live</a></button>
-                            <button><a href="https://github.com/K1MB3R98/TBOS-Inventory-Management-App">View Git</a></button>
+                            <button><a href="https://tbos-inventory-management-app.netlify.app/" target="_blank" rel="noopener noreferrer">View Live</a></button>
+                            <button><a href="https://github.com/K1MB3R98/TBOS-Inventory-Management-App" target="_blank" rel="noopener noreferrer">View Git</a></button>
                         </div>
                     </li>
                     <li class="project">
-                        <img src="./assets/projects/MovieMood.png" alt="A screenshot of the Movie Mood project.">
+                        <img src="./assets/projects/MovieMood2.png" alt="A screenshot of the Movie Mood project.">
                         <div class="infoOverlay">
-                            <h3>Movie Mood</h3>
+                            <h3 class="titleAdjust5">Movie Mood</h3>
                             <hr>
-                            <p>In the mood for a movie and need some suggestions? This paired programming project was completed by myself and <a class="partner" href="https://www.danielcodes.ca/">Daniel McIntyre</a> for Juno College's Web Dev Bootcamp. </p>
+                            <p>In the mood for a movie and need some suggestions? This paired programming JavaScript and API project was completed with my friend, <a class="partner" href="https://www.danielcodes.ca/" target="_blank" rel="noopener noreferrer">Daniel McIntyre</a>.</p>
                             <div class="madeWithIcons">
                                 <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
                                 <i class="fab fa-sass" aria-hidden="true" title="Sass"></i>
                                 <i class="fab fa-js" aria-hidden="true" title="JavaScript"></i>
                             </div>
-                            <button><a href="https://movie-mood.netlify.app">View Live</a></button>
-                            <button><a href="https://github.com/K1MB3R98/MovieMood">View Git</a></button>
+                            <button><a href="https://movie-mood.netlify.app" target="_blank" rel="noopener noreferrer">View Live</a></button>
+                            <button><a href="https://github.com/K1MB3R98/MovieMood" target="_blank" rel="noopener noreferrer">View Git</a></button>
                         </div>
                     </li>
                     <li class="project">
                         <img src="./assets/projects/WeatherApp.png" alt="A screenshot of the 5-Day Weather Forecast webb app.">
                         <div class="infoOverlay">
-                            <h3>5-Day Weather Forecast</h3>
+                            <h3 class="titleAdjust2">5-Day Weather Forecast</h3>
                             <hr>
-                            <p>Use this web app to check your local 5-day forecast! This project was created in Juno College's JavaScript
-                                ConEd course.</p>
+                            <p>Use this web app to check your local 5-day forecast! This project was created using JavaScript, jQuery, HTML, and CSS.</p>
                             <div class="madeWithIcons">
                                 <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
                                 <i class="fab fa-js" aria-hidden="true" title="JavaScript"></i>
                                 <img class="toolImg" src="./assets/icons/jqueryIcon.png" aria-hidden="true" title="jQuery">
                             </div>
-                            <button><a href="https://5-day-weather-forecast.netlify.app">View Live</a></button>
-                            <button><a href="https://github.com/K1MB3R98/5-DayWeatherApp">View Git</a></button>
+                            <button><a href="https://5-day-weather-forecast.netlify.app" target="_blank" rel="noopener noreferrer">View Live</a></button>
+                            <button><a href="https://github.com/K1MB3R98/5-DayWeatherApp" target="_blank" rel="noopener noreferrer">View Git</a></button>
                         </div>
                     </li>
                     <li class="project">
                         <img src="./assets/projects/SanctuaryHelpers.png" alt="A screenshot of the homepage for the Sanctuary Helpers project">
                         <div class="infoOverlay">
-                            <h3>Sanctuary Helpers</h3>
+                            <h3 class="titleAdjust4" >Sanctuary Helpers</h3>
                             <hr>
-                            <p>A PSD conversion created for Juno College's Web Dev Bootcamp. Now with working Blog page comments section!</p>
+                            <p>A PSD conversion created with HTML and CSS, with functional JavaScript-based comment section on the "Blog" page.</p>
                             <div class="madeWithIcons">
                                 <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
                                 <i class="fab fa-sass" aria-hidden="true" title="Sass"></i>
                                 <i class="fab fa-js" aria-hidden="true" title="JavaScript"></i>
                             </div>
-                            <button><a href="https://sanctuaryhelpers-home.netlify.app">View Live</a></button>
-                            <button><a href="https://github.com/K1MB3R98/SanctuaryHelpers">View Git</a></button>
+                            <button><a href="https://sanctuaryhelpers-home.netlify.app" target="_blank" rel="noopener noreferrer">View Live</a></button>
+                            <button><a href="https://github.com/K1MB3R98/SanctuaryHelpers" target="_blank" rel="noopener noreferrer">View Git</a></button>
                         </div>
                     </li>
                     <li class="project">
                         <img src="./assets/projects/FootForward.jpg" alt="A screen shot of this project.">
                         <div class="infoOverlay">
-                            <h3>Foot Forward</h3>
+                            <h3 class="titleAdjust5">Foot Forward</h3>
                             <hr>
-                            <p>This project is a PSD conversion built in CodePen for Juno College's Web Dev Bootcamp.</p>
+                            <p>This project is a PSD conversion built in CodePen using HTML and CSS.</p>
                             <div class="madeWithIcons">
                                 <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
                                 <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
                             </div>
-                            <button><a href="https://codepen.io/k1mb3r98/pen/yLzZLjV">CodePen</a></button>
+                            <button><a href="https://codepen.io/k1mb3r98/pen/yLzZLjV" target="_blank" rel="noopener noreferrer">CodePen</a></button>
                         </div>
                     </li>
                 </ul>

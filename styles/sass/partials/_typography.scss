@@ -10,9 +10,11 @@ p {
 // FOLIO
 h1 {
     font-family: $headingsFont;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     letter-spacing: 0.6rem;
+    font-weight: 400;
     color: $black;
+    text-shadow: 2px 2px 5px $white;
 }
 
 // Section Headings
@@ -23,7 +25,7 @@ h2 {
     text-shadow: 3px 2px $white;
 }
 
-// Name and Title
+// Project Titles
 h3 {
     font-family: $headingsFont;
     font-size: 1rem;
@@ -41,6 +43,15 @@ h5 {
     font-family: $bodyFont;
     font-size: 2.5rem;
     font-weight: 900;
+}
+
+// Name & Title Side Bars
+h6 {
+    font-family: $headingsFont;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px $white;
 }
  
 button {
