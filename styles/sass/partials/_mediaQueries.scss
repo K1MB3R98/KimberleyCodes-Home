@@ -26,7 +26,6 @@
             }
         }
     }
-
     // Projects Styles
     .projects {
         .project {
@@ -63,7 +62,6 @@
             }
         }
     }
-
     // Projects Styles
     .projects {
         .project {
@@ -73,7 +71,6 @@
             }
         }
     }
-        
     // About Styles
     .about {
         .aboutFlex {
@@ -89,7 +86,6 @@
             }
         }
     }
-
     // Forms Styles
     form {
         padding: 0 75px 50px 75px;
@@ -100,7 +96,6 @@
     }
 }
 
-
 // Devices with screens 1200px and smaller
 @media (max-width: 1200px) {
     .contact {
@@ -108,7 +103,6 @@
             padding-top: 50px;
         }
     }
-
     // Projects Styles
     .projects {
         .project {
@@ -117,14 +111,12 @@
     }
 }
 
-
 // Devices with screens 1120px and smaller
 @media (max-width: 1120px) {
     h5 {
         font-size: 2rem;
     }
 }
-
 
 // Devices with screens 1108px and smaller
 @media (max-width: 1108px) {
@@ -135,7 +127,6 @@
         }
     }
 }
-
 
 // Devices with screens 1100px and smaller
 @media (max-width: 1100px) {
@@ -156,21 +147,17 @@
                     padding-left: 28vh;
                 }
             }
-    
             .titleBar {
                 right: 3.5%;
-    
                 h6 {
                     padding-left: 33vh;
                 }
-    
                 .extraSpace {
                     padding-left: 39vh;
                 }
             }
         }
     }
-
     // Projects Styles
     .projects {
         .project {
@@ -178,7 +165,6 @@
         }
     }
 }
-
 
 // Devices with screens 1086px and smaller
 @media (max-width: 1086px) {
@@ -190,7 +176,6 @@
     }
 }
 
-
 // Devices with screens 1000px and smaller
 @media (max-width: 1000px) {
     // Nav Bar Styles
@@ -200,7 +185,6 @@
             margin: 0 10px;
         }
     }
-
     // About Styles
     .about {
         .aboutFlex {
@@ -209,7 +193,6 @@
             }
         }
     }
-
     // Projects Styles
     .projects {
         ul {
@@ -228,7 +211,6 @@
             }
         }
     }
-
     // Contact Styles
     .contactFlexContainer {
         flex-direction: column;
@@ -238,7 +220,6 @@
             padding: 50px;
         }
     }
-
     // Forms Styles
     form {
         width: 80%;
@@ -250,6 +231,15 @@
     }
 }
 
+// Devices with screens 901px and larger
+@media (min-width: 901px) {
+    // Hamburger Menu Styles
+    .hamMenu {
+        .hamNav {
+            display: none;
+        }
+    }
+}
 
 // Devices with screens 900px and smaller
 @media (max-width: 900px) {  
@@ -257,9 +247,8 @@
     .hamMenu {
         position: fixed;
         top: 15px;
-        right: 95px;
+        right: 10%;
     }
-
     // Nav Bar Styles - hidden for smaller screens
     .navBar {
         height: 55px;
@@ -268,7 +257,6 @@
             top: -300px;
         }
     }
-
     // Header Styles  
     header {
         .sideBars {
@@ -280,7 +268,6 @@
             }
         }
     }
-    
     // Projects Styles
     .projects {
         ul {
@@ -293,7 +280,6 @@
         }
     }
 }
-
 
 // Devices with screens 844px and smaller
 @media (max-width: 844px) {
@@ -309,15 +295,8 @@
     }
 }
 
-
 // Devices with screeens 800px and smaller
 @media (max-width: 800px) {
-    // Navigation Bar Styles
-    .navBar {
-        padding-top: 20px;
-        line-height: 1.5rem;
-    }
-
     // About Styles
     .about {
         padding: 15px 100px 100px 100px;
@@ -333,18 +312,15 @@
             }
         }
     }
-
     // Contact Styles
     .contact {
         padding: 0;
     }
-
     // Forms Styles
     form {
         text-align: center;
     }
 }
-
 
 // Devices with screens 750px and smaller
 @media (max-width: 750px) {
@@ -359,7 +335,6 @@
     }
 }
 
-
 // Devices with screens 705px and smaller
 @media (max-width: 705px) {
     // About Styles
@@ -367,7 +342,6 @@
         padding: 25px 0;
     }
 }
-
 
 // Devices with screens 700px and smaller
 @media (max-width: 700px) {
@@ -377,36 +351,36 @@
             text-shadow: 2px 1px $white;
             letter-spacing: 0.1rem;
         }
-    .sideBars {
-        height: 0;
-        .nameBar {
-            white-space: normal;
-            transform: rotate(0deg);
-            position: relative;
-            top: 12vh;
-            left: 0;
-            width: 100%;
-            padding: 0 15%;
-            text-align: center;
-            h6 {
-                padding: 0;
-                font-size: 2rem;
+        .sideBars {
+            height: 0;
+            .nameBar {
+                white-space: normal;
+                transform: rotate(0deg);
+                position: relative;
+                top: 12vh;
+                left: -15%;
+                width: 100%;
+                padding: 0 15%;
+                text-align: center;
+                h6 {
+                    padding: 0;
+                    font-size: 2rem;
+                }
             }
-        }
-
-        .titleBar {
-            white-space: normal;
-            transform: rotate(0deg);
-            position: relative;
-            top: 72vh;
-            left: 0;
-            width: 100%;
-            padding: 0 20%;
-            text-align: center;
-            h6,
-            .extraSpace {
-                padding: 0;
-                font-size: 1.7rem;
+            .titleBar {
+                white-space: normal;
+                transform: rotate(0deg);
+                position: relative;
+                top: 72vh;
+                left: -20%;
+                width: 100%;
+                padding: 0 20%;
+                text-align: center;
+                h6,
+                .extraSpace {
+                    padding: 0;
+                    font-size: 1.7rem;
+                }
             }
         }
     }   
@@ -416,14 +390,22 @@
     }
 }
 
-
 // Devices with screens 645px and smaller
 @media (max-width: 645px) {
     .wrapper {
         width: 90%;
     }
+    // Hamburger Menu Styles
+    .hamMenu {
+        position: fixed;
+        top: 15px;
+        right: 5%;
+        .hamNav {
+            margin-right: 10px;
+            line-height: 1.2rem;
+        }
+    }
 }
-
 
 // Devices with screens 618px and smaller
 @media (max-width: 618px) {
@@ -441,6 +423,15 @@
 
 // Devices with screens 580px and smaller
 @media (max-width: 580px) {
+    // Header Styles
+    header {
+        .sideBars {           
+            .nameBar {
+                width: auto;
+                left: 0;
+            }
+        }
+    }
     // About Styles
     .about {
         padding: 1px 50px 50px 50px;
@@ -448,7 +439,6 @@
             font-size: 1.5rem;
         }
     }
-
     // Projects Styles
     .projects {
         padding: 0 20px;
@@ -464,7 +454,6 @@
     }
 }
 
-
 // Devices with screens 561px and smaller
 @media (max-width: 561px) {
     // Projects Styles
@@ -479,9 +468,12 @@
     }
 }
 
-
 // Devices with screens 481px and smaller
 @media (max-width: 481px) {
+    // Header Styles
+    header h1 {
+        left: 5%;
+    }
     // Projects Styles
     .projects {
         ul {
@@ -492,7 +484,6 @@
             }
         }
     }
-
     // Contact Styles
     .contact {
         .contactTextAndSocials {
@@ -523,9 +514,18 @@
     }
 }
 
-
 // Devices with screens 430px and smaller
 @media (max-width: 430px) {
+    // Header Styles
+    header {
+        .sideBars {
+            .titleBar {
+                width: auto;
+                left: 0;
+                top: 68vh;
+            }
+        }
+    }
     // Projects Styles
     .projects {
         padding: 0 10px;
@@ -574,7 +574,10 @@
                     width: 80%;
                 }
             } 
+            .infoOverlay{
+                height: 97.8%;
+                width: 97%;
+            }
         } 
     }
-}
 }
