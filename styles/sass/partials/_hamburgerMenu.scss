@@ -1,0 +1,81 @@
+// Hamburger Menu Styles
+.hamMenu {
+    position: absolute;
+    right: -400px;
+    z-index: 20;
+    .hamburg {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        // Creating the "Hamburger"
+        .hamBars {
+            display: block;
+            margin: 4px 0;
+            height: 5px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: $black;
+            transition: 0.3s ease;
+            #hamBar1 {
+                transform: translateY(-4px);
+            }
+            #hamBar2 {
+                transform: translateY(4px);
+            }
+        }
+    }
+    // Nav Items
+    .hamMenuBGND {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 0;
+        height: 0;
+        z-index: -10;
+        background-color: $navPrimary;
+        border: 1px solid $navPrimaryHighlight;
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+    .hamNav {
+        display: none;
+        top: 50px;
+        right: 0;
+        margin-right: 25px;
+        width: 100px;
+        background-color: $navPrimary;
+        // transition: 1.5s ease;
+        ul {
+            li {
+                margin: 5px 0;
+                border-bottom: 5px solid transparent;
+                transition: 0.3s;
+                &:hover,
+                &:focus {
+                    border-bottom: 5px solid $navPrimaryHighlight;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .change {
+        display: block;
+        .hamBars {
+            background-color: $navPrimaryHighlight;
+        }
+        #hamBar1 {
+            transform: translateY(9px) rotateZ(-45deg);
+        }
+        #hamBar2 {
+            opacity: 0;
+        }
+        #hamBar3 {
+            transform: translateY(-9px) rotateZ(45deg);
+        }
+    }
+    .changeBGND {
+        width: 520px;
+        height: 460px;
+        transform: translate(82%, -30%);
+    }
+}

@@ -1,5 +1,4 @@
 // Styles for Navigation Bar
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -8,24 +7,28 @@ nav {
     line-height: 2rem;
     background-color: $white;
     width: 100%;
-    padding: 0 12%;
     padding-top: 10px;
-    h1 {
-        min-width: 300px;
+    .ul1 {
+        justify-content: flex-start;
+        width: 50%;
+        margin: 0 0px 0 10%;
+    }
+    .ul2 {
+        justify-content: flex-end;
+        width: 50%;
+        margin: 0 10% 0 0px;
     }
     ul {
         display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        li {            
-            width: calc((100%/5) - 80px);
+        li {        
+            margin: 0 5%;
+            min-width: 100px;
             text-align: center;
-            width: 100px;
             border-bottom: 5px solid transparent;
             transition: 0.3s;
             &:hover,
             &:focus {
-                border-bottom: 5px solid $secondaryHighlight;
+                border-bottom: 5px solid $navPrimaryHighlight;
                 cursor: pointer;
             }
         }

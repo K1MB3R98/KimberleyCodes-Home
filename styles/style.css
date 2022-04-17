@@ -276,7 +276,7 @@ h6 {
   font-size: 2.5rem;
   letter-spacing: 0.2rem;
   font-weight: 400;
-  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
 button {
@@ -336,25 +336,31 @@ nav {
   line-height: 2rem;
   background-color: rgb(255, 255, 255);
   width: 100%;
-  padding: 0 12%;
   padding-top: 10px;
 }
-nav h1 {
-  min-width: 300px;
+nav .ul1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  margin: 0 0px 0 10%;
+}
+nav .ul2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  margin: 0 10% 0 0px;
 }
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100%;
 }
 nav ul li {
-  width: calc(20% - 80px);
+  margin: 0 5%;
+  min-width: 100px;
   text-align: center;
-  width: 100px;
   border-bottom: 5px solid transparent;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -364,18 +370,105 @@ nav ul li:hover, nav ul li:focus {
   cursor: pointer;
 }
 
+.hamMenu {
+  position: absolute;
+  right: -400px;
+  z-index: 20;
+}
+.hamMenu .hamburg {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.hamMenu .hamburg .hamBars {
+  display: block;
+  margin: 4px 0;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(21, 21, 20);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.hamMenu .hamburg .hamBars #hamBar1 {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+.hamMenu .hamburg .hamBars #hamBar2 {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+.hamMenu .hamMenuBGND {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  z-index: -10;
+  background-color: rgb(217, 245, 232);
+  border: 1px solid rgba(32, 178, 171, 0.644);
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.hamMenu .hamNav {
+  display: none;
+  top: 50px;
+  right: 0;
+  margin-right: 25px;
+  width: 100px;
+  background-color: rgb(217, 245, 232);
+}
+.hamMenu .hamNav ul li {
+  margin: 5px 0;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hamMenu .hamNav ul li:hover, .hamMenu .hamNav ul li:focus {
+  border-bottom: 5px solid rgba(32, 178, 171, 0.644);
+  cursor: pointer;
+}
+.hamMenu .change {
+  display: block;
+}
+.hamMenu .change .hamBars {
+  background-color: rgba(32, 178, 171, 0.644);
+}
+.hamMenu .change #hamBar1 {
+  -webkit-transform: translateY(9px) rotateZ(-45deg);
+          transform: translateY(9px) rotateZ(-45deg);
+}
+.hamMenu .change #hamBar2 {
+  opacity: 0;
+}
+.hamMenu .change #hamBar3 {
+  -webkit-transform: translateY(-9px) rotateZ(45deg);
+          transform: translateY(-9px) rotateZ(45deg);
+}
+.hamMenu .changeBGND {
+  width: 520px;
+  height: 460px;
+  -webkit-transform: translate(82%, -30%);
+          transform: translate(82%, -30%);
+}
+
 body {
   position: relative;
 }
 
+header h1 {
+  position: fixed;
+  top: 10px;
+  z-index: 15;
+  left: calc(50% - 130px);
+  width: 250px;
+}
 header img {
   height: 90vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-header h1 {
-  text-align: center;
 }
 header .toAbout {
   text-align: center;
@@ -435,7 +528,7 @@ header .toAbout i:hover, header .toAbout i:focus {
 }
 
 .about {
-  background-color: rgb(217, 245, 232);
+  background-color: rgb(190, 225, 174);
   margin: 20px 0;
   padding: 10px 100px 75px 100px;
 }
@@ -465,7 +558,7 @@ header .toAbout i:hover, header .toAbout i:focus {
   margin-top: 25px;
   width: 60%;
   border: transparent;
-  border-top: 1px solid rgba(32, 178, 171, 0.644);
+  border-top: 1px solid rgb(88, 178, 32);
 }
 .aboutFlex .photo {
   width: 30%;
@@ -482,13 +575,13 @@ header .toAbout i:hover, header .toAbout i:focus {
 .tools {
   margin-top: 25px;
   padding: 25px;
-  border: 1px solid rgba(32, 178, 171, 0.644);
+  border: 1px solid rgb(88, 178, 32);
   text-align: center;
 }
 .tools h3 {
   padding: 10px 0;
   width: 150px;
-  border-bottom: 2px solid rgba(32, 178, 171, 0.644);
+  border-bottom: 2px solid rgb(88, 178, 32);
 }
 .tools .toolsFlex {
   -webkit-box-pack: center;
@@ -579,7 +672,7 @@ ul .partner {
 }
 ul .partner:hover, ul .partner:focus {
   text-decoration: underline;
-  color: rgba(32, 178, 171, 0.644);
+  color: rgb(88, 178, 32);
 }
 ul .project {
   margin-bottom: 30px;
@@ -775,7 +868,7 @@ footer .contactIcons li a {
   transition: 0.3s;
 }
 footer .contactIcons li a:hover, footer .contactIcons li a:focus {
-  color: rgba(32, 178, 171, 0.644);
+  color: rgb(88, 178, 32);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -874,6 +967,11 @@ form input {
   }
 }
 @media (max-width: 1100px) {
+  header h1 {
+    top: 15px;
+    font-size: 1.2rem;
+    left: calc(50% - 115px);
+  }
   header .sideBars h6 {
     font-size: 1.5rem;
   }
@@ -903,6 +1001,11 @@ form input {
   }
 }
 @media (max-width: 1000px) {
+  .ul1 li,
+.ul2 li {
+    margin: 0 10px;
+  }
+
   .about .aboutFlex .photo {
     width: 100%;
   }
@@ -952,6 +1055,20 @@ form input {
   }
 }
 @media (max-width: 900px) {
+  .hamMenu {
+    position: fixed;
+    top: 15px;
+    right: 95px;
+  }
+
+  .navBar {
+    height: 55px;
+  }
+  .navBar ul {
+    position: absolute;
+    top: -300px;
+  }
+
   header .sideBars .nameBar {
     left: 8%;
   }
@@ -972,7 +1089,7 @@ form input {
   }
 }
 @media (max-width: 800px) {
-  nav {
+  .navBar {
     padding-top: 20px;
     line-height: 1.5rem;
   }
@@ -1012,22 +1129,19 @@ form input {
   }
 }
 @media (max-width: 700px) {
-  nav h1 {
-    font-size: 1.2rem;
-    position: absolute;
-    top: 13vh;
-    left: calc(50% - 150px);
-  }
-
   header h3 {
     text-shadow: 2px 1px rgb(255, 255, 255);
     letter-spacing: 0.1rem;
+  }
+  header .sideBars {
+    height: 0;
   }
   header .sideBars .nameBar {
     white-space: normal;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    top: 62vh;
+    position: relative;
+    top: 12vh;
     left: 0;
     width: 100%;
     padding: 0 15%;
@@ -1041,7 +1155,8 @@ form input {
     white-space: normal;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    top: 77vh;
+    position: relative;
+    top: 72vh;
     left: 0;
     width: 100%;
     padding: 0 20%;
@@ -1050,24 +1165,23 @@ form input {
   header .sideBars .titleBar h6,
 header .sideBars .titleBar .extraSpace {
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
-
-  .projects {
+  header .projects {
     padding: 0 75px;
   }
 }
-@media (max-width: 645px) {
+@media (max-width: 700px) and (max-width: 645px) {
   .wrapper {
     width: 90%;
   }
 }
-@media (max-width: 618px) {
+@media (max-width: 700px) and (max-width: 618px) {
   .projects ul .project .titleAdjust3 {
     padding-top: 0;
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 700px) and (max-width: 580px) {
   .about {
     padding: 1px 50px 50px 50px;
   }
@@ -1086,12 +1200,12 @@ header .sideBars .titleBar .extraSpace {
     padding-top: 20px;
   }
 }
-@media (max-width: 561px) {
+@media (max-width: 700px) and (max-width: 561px) {
   .projects ul .project .titleAdjust2 {
     padding-top: 0;
   }
 }
-@media (max-width: 481px) {
+@media (max-width: 700px) and (max-width: 481px) {
   .projects ul .project .titleAdjust3 {
     padding-top: 0;
   }
@@ -1105,7 +1219,7 @@ header .sideBars .titleBar .extraSpace {
     padding: 25px;
   }
 }
-@media (max-width: 470px) {
+@media (max-width: 700px) and (max-width: 470px) {
   .about {
     padding: 25px;
   }
@@ -1114,7 +1228,7 @@ header .sideBars .titleBar .extraSpace {
     padding-top: 0;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 700px) and (max-width: 430px) {
   .projects {
     padding: 0 10px;
   }

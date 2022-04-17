@@ -87,7 +87,6 @@
                 width: 40%;
                 margin: 50px 0;
             }
-            
         }
     }
 
@@ -142,6 +141,11 @@
 @media (max-width: 1100px) {
     // Header Styles
     header {
+        h1 {
+            top: 15px;
+            font-size: 1.2rem;
+            left: calc(50% - 115px);
+        }
         .sideBars {
             h6 {
                 font-size: 1.5rem;
@@ -189,6 +193,14 @@
 
 // Devices with screens 1000px and smaller
 @media (max-width: 1000px) {
+    // Nav Bar Styles
+    .ul1,
+    .ul2 {
+        li {
+            margin: 0 10px;
+        }
+    }
+
     // About Styles
     .about {
         .aboutFlex {
@@ -241,6 +253,22 @@
 
 // Devices with screens 900px and smaller
 @media (max-width: 900px) {  
+    // Hamburger Menu Styles
+    .hamMenu {
+        position: fixed;
+        top: 15px;
+        right: 95px;
+    }
+
+    // Nav Bar Styles - hidden for smaller screens
+    .navBar {
+        height: 55px;
+        ul {
+            position: absolute;
+            top: -300px;
+        }
+    }
+
     // Header Styles  
     header {
         .sideBars {
@@ -285,7 +313,7 @@
 // Devices with screeens 800px and smaller
 @media (max-width: 800px) {
     // Navigation Bar Styles
-    nav {
+    .navBar {
         padding-top: 20px;
         line-height: 1.5rem;
     }
@@ -343,53 +371,45 @@
 
 // Devices with screens 700px and smaller
 @media (max-width: 700px) {
-    // Navigation Bar Styles
-    nav {
-        h1 {
-            font-size: 1.2rem;
-            position: absolute;
-            top: 13vh;
-            left: calc(50% - 150px);
-        }
-    }
-
     // Header Styles
     header {
         h3 {
             text-shadow: 2px 1px $white;
             letter-spacing: 0.1rem;
         }
-        .sideBars {
-            .nameBar {
-                white-space: normal;
-                transform: rotate(0deg);
-                top: 62vh;
-                left: 0;
-                width: 100%;
-                padding: 0 15%;
-                text-align: center;
-                h6 {
-                    padding: 0;
-                    font-size: 2rem;
-                }
-            }
-            .titleBar {
-                white-space: normal;
-                transform: rotate(0deg);
-                top: 77vh;
-                left: 0;
-                width: 100%;
-                padding: 0 20%;
-                text-align: center;
-                h6, 
-                .extraSpace {
-                    padding: 0;
-                    font-size: 1.2rem;
-                }
+    .sideBars {
+        height: 0;
+        .nameBar {
+            white-space: normal;
+            transform: rotate(0deg);
+            position: relative;
+            top: 12vh;
+            left: 0;
+            width: 100%;
+            padding: 0 15%;
+            text-align: center;
+            h6 {
+                padding: 0;
+                font-size: 2rem;
             }
         }
-    }
-    
+
+        .titleBar {
+            white-space: normal;
+            transform: rotate(0deg);
+            position: relative;
+            top: 72vh;
+            left: 0;
+            width: 100%;
+            padding: 0 20%;
+            text-align: center;
+            h6,
+            .extraSpace {
+                padding: 0;
+                font-size: 1.7rem;
+            }
+        }
+    }   
     // Projects Styles
     .projects {
         padding: 0 75px;
@@ -556,4 +576,5 @@
             } 
         } 
     }
+}
 }
