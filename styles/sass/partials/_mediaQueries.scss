@@ -176,13 +176,30 @@
     }
 }
 
+// Devices with screens 1001px and larger
+@media (min-width: 1001px) {
+
+    // Hamburger Menu Styles
+    .hamMenu {
+        display: none;
+    }
+}
+
 // Devices with screens 1000px and smaller
 @media (max-width: 1000px) {
     // Nav Bar Styles
-    .ul1,
-    .ul2 {
-        li {
-            margin: 0 10px;
+    // Hamburger Menu Styles
+    .hamMenu {
+        position: fixed;
+        top: 15px;
+        right: 10%;
+    }
+    // Nav Bar Styles - hidden for smaller screens
+    .navBar {
+        ul {
+            height: 55px;
+            position: absolute;
+            top: -300px;
         }
     }
     // About Styles
@@ -231,32 +248,8 @@
     }
 }
 
-// Devices with screens 901px and larger
-@media (min-width: 901px) {
-    // Hamburger Menu Styles
-    .hamMenu {
-        .hamNav {
-            display: none;
-        }
-    }
-}
-
 // Devices with screens 900px and smaller
 @media (max-width: 900px) {  
-    // Hamburger Menu Styles
-    .hamMenu {
-        position: fixed;
-        top: 15px;
-        right: 10%;
-    }
-    // Nav Bar Styles - hidden for smaller screens
-    .navBar {
-        height: 55px;
-        ul {
-            position: absolute;
-            top: -300px;
-        }
-    }
     // Header Styles  
     header {
         .sideBars {
@@ -358,7 +351,7 @@
                 transform: rotate(0deg);
                 position: relative;
                 top: 12vh;
-                left: -15%;
+                left: 0;
                 width: 100%;
                 padding: 0 15%;
                 text-align: center;
@@ -372,7 +365,7 @@
                 transform: rotate(0deg);
                 position: relative;
                 top: 72vh;
-                left: -20%;
+                left: 0;
                 width: 100%;
                 padding: 0 20%;
                 text-align: center;
@@ -400,9 +393,11 @@
         position: fixed;
         top: 15px;
         right: 5%;
-        .hamNav {
-            margin-right: 10px;
-            line-height: 1.2rem;
+        .hamNav ul {
+            margin-left: 65px;
+        }
+        .changeBGND {
+            transform: translate(75%, -35%);
         }
     }
 }
@@ -574,10 +569,6 @@
                     width: 80%;
                 }
             } 
-            .infoOverlay{
-                height: 97.8%;
-                width: 97%;
-            }
         } 
     }
 }

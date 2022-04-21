@@ -1,35 +1,40 @@
 // Styles for Navigation Bar
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 10;
-    line-height: 2rem;
-    background-color: $white;
-    width: 100%;
-    padding-top: 10px;
-    .ul1 {
-        justify-content: flex-start;
-        width: 50%;
-        margin: 0 0px 0 10%;
-    }
-    .ul2 {
-        justify-content: flex-end;
-        width: 50%;
-        margin: 0 10% 0 0px;
-    }
-    ul {
+.navBar {
+   position: relative;
+    nav {
         display: flex;
-        li {        
-            margin: 0 5%;
-            min-width: 100px;
-            text-align: center;
-            border-bottom: 5px solid transparent;
-            transition: 0.3s;
-            &:hover,
-            &:focus {
-                border-bottom: 5px solid $navPrimaryHighlight;
-                cursor: pointer;
+        justify-content: space-between;
+        position: fixed;
+        margin-top: 0;
+        margin-left: 0;
+        padding-top: 10px;
+        height: 55px;
+        z-index: 10;
+        background-color: $white;
+        .ul1 {
+            justify-content: flex-start;
+            width: 50%;
+            margin: 0 10% 0 0;
+        }
+        .ul2 {
+            justify-content: flex-end;
+            width: 50%;
+            margin: 0 0 0 010%;
+        }
+        ul {
+            display: flex;
+            li {  
+                margin: 0 5%;
+                padding-top: 10px;
+                min-width: 100px;
+                text-align: center;
+                border-bottom: 5px solid transparent;
+                transition: 0.3s;
+                &:hover,
+                &:focus {
+                    border-bottom: 5px solid $navPrimaryHighlight;
+                    cursor: pointer;
+                }
             }
         }
     }

@@ -7,15 +7,14 @@
 
     <script src="https://kit.fontawesome.com/384b0bb467.js" crossorigin="anonymous"></script>
 
+    <link rel="icon" type"image/png" href="./assets/icons/favicon.png" sizes="16x16">
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>✨ Kimberley Codes ✨</title>
+    <title>Kimberley Codes</title>
 </head>
 
 <body>
     <header id="home">       
-        <h1>PORTFOLIO</h1>
-        
         <!-- Name and Title Side Bars -->
         <section class="sideBars">
             <div class="nameBar">
@@ -27,53 +26,58 @@
             </div>
         </section>
 
-        <!-- Hamburger Menu -->
-        <section class="hamMenu" id="hamMenu">
-            <div class="hamburg" id="hamburg" onclick="menuOnClick()">
-                <div class="hamBars" id="hamBar1" ></div>
-                <div class="hamBars" id="hamBar2"></div>
-                <div class="hamBars" id="hamBar3"></div>
+        <section class="wrapper">
+            <h1>PORTFOLIO</h1>
+            <!-- Hamburger Menu -->
+            <div class="hamMenu" id="hamMenu">
+                <div class="hamburg" id="hamburg" onclick="menuOnClick()">
+                    <div class="hamBars" id="hamBar1" ></div>
+                    <div class="hamBars" id="hamBar2"></div>
+                    <div class="hamBars" id="hamBar3"></div>
+                </div>
+
+                <!-- Hamburger Menu Nav -->
+                <nav class="hamNav" id="hamNav">
+                    <ul>
+                        <li>
+                            <h4><a onclick="menuOnClick()" href="./index.html#home">HOME</a></h4>
+                        </li>
+                        <li>
+                            <h4><a onclick="menuOnClick()" href="./index.html#about">ABOUT</a></h4>
+                        </li>
+                        <li>
+                            <h4><a onclick="menuOnClick()" href="./index.html#projects">PROJECTS</a></h4>
+                        </li>
+                        <li>
+                            <h4><a onclick="menuOnClick()" href="./index.html#contact">CONTACT</a></h4>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hamMenuBGND" id="hamMenuBGND" ></div>
             </div>
-
-            <!-- Hamburger Menu Nav -->
-            <nav class="hamNav" id="hamNav">
-                <ul>
-                    <li>
-                        <h4><a onclick="menuOnClick()" href="./index.html#home">HOME</a></h4>
-                    </li>
-                    <li>
-                        <h4><a onclick="menuOnClick()" href="./index.html#about">ABOUT</a></h4>
-                    </li>
-                    <li>
-                        <h4><a onclick="menuOnClick()" href="./index.html#projects">PROJECTS</a></h4>
-                    </li>
-                    <li>
-                        <h4><a onclick="menuOnClick()" href="./index.html#contact">CONTACT</a></h4>
-                    </li>
-                </ul>
-            </nav>
-            <div class="hamMenuBGND" id="hamMenuBGND" ></div>
-        </section>
-
-        <!-- Navigation Bar -->
-        <nav class="navBar" >
-            <ul class="ul1" >
-                <li><h4><a href="./index.html#home">HOME</a></h4></li>
-                <li><h4><a href="./index.html#about">ABOUT</a></h4></li>
-            </ul>    
-            <ul class="ul2" >
-                <li><h4><a href="./index.html#projects">PROJECTS</a></h4></li>
-                <li><h4><a href="./index.html#contact">CONTACT</a></h4></li>
-            </ul>    
-        </nav>    
-
-        <!-- Header Image -->
-        <div class="wrapper">
-            <img src="./assets/header-img.jpeg" alt="Close up of two pink flowers in a clear glass bottle on a pink background.">
-            <div class="toAbout">
-                <a href="./index.html#about"><i class="fas fa-chevron-down"></i></a>
+            
+            <!-- Navigation Bar -->
+            <div class="navBar">
+                <nav class="wrapper" >
+                    <ul class="ul1" >
+                        <li><h4><a href="./index.html#home">HOME</a></h4></li>
+                        <li><h4><a href="./index.html#about">ABOUT</a></h4></li>
+                    </ul>    
+                    <ul class="ul2" >
+                        <li><h4><a href="./index.html#projects">PROJECTS</a></h4></li>
+                        <li><h4><a href="./index.html#contact">CONTACT</a></h4></li>
+                    </ul>    
+                </nav>    
+            </div>
+            
+            <!-- Header Image -->
+            <div>
+                <img src="./assets/header-img.jpeg" alt="Close up of two pink flowers in a clear glass bottle on a pink background.">
+                <div class="toAbout">
+                    <a href="./index.html#about"><i class="fas fa-chevron-down"></i></a>
+                </div>    
             </div>    
-        </div>    
+        </section>
         <!-- End: Wrapper -->
 
     </header>
@@ -189,7 +193,7 @@
                         </div>
                     </li>
                     <li class="project">
-                        <img src="./assets/projects/MovieMood2.png" alt="A screenshot of the Movie Mood project.">
+                        <img src="./assets/projects/MovieMood.png" alt="A screenshot of the Movie Mood project.">
                         <div class="infoOverlay">
                             <h3 class="titleAdjust5">Movie Mood</h3>
                             <hr>

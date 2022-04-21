@@ -6,7 +6,6 @@
     .hamburg {
         width: 40px;
         height: 40px;
-        cursor: pointer;
         // Creating the "Hamburger"
         .hamBars {
             display: block;
@@ -23,32 +22,42 @@
                 transform: translateY(4px);
             }
         }
+        &:hover,
+        &:focus {
+            .hamBars {
+                background-color: $navPrimaryHighlight;
+            }
+            cursor: pointer;
+        }
     }
     // Nav Items
     .hamMenuBGND {
         position: absolute;
         top: 15px;
-        right: 20px;
+        right: 0;
         width: 0;
         height: 0;
         z-index: -10;
         background-color: $navPrimary;
-        border: 1px solid $navPrimaryHighlight;
         border-radius: 50%;
         transition: 0.3s ease;
     }
     .hamNav {
         display: none;
-        top: 50px;
-        right: 0;
-        margin-right: 25px;
+        margin-left: -100px;
         width: 100px;
         background-color: transparent;
         line-height: 1.5rem;
         ul {
+            margin: 10px 0 0 100px;
+            width: 100px;
+            justify-content: center;
             li {
-                margin: 5px 0;
+                margin: 5px 10px;
+                min-width: 100px;
+                line-height: 1.2rem;
                 border-bottom: 5px solid transparent;
+                text-align: center;
                 transition: 0.3s;
                 &:hover,
                 &:focus {
@@ -74,8 +83,8 @@
         }
     }
     .changeBGND {
-        width: 520px;
+        width: 460px;
         height: 460px;
-        transform: translate(82%, -30%);
+        transform: translate(80%, -35%);
     }
 }
