@@ -7,6 +7,8 @@
 
     <script src="https://kit.fontawesome.com/384b0bb467.js" crossorigin="anonymous"></script>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <link rel="icon" type"image/png" href="./assets/icons/favicon.png" sizes="16x16">
     <link rel="stylesheet" href="./styles/style.css">
 
@@ -268,25 +270,24 @@
                             <p>Hey, thanks for stopping by! If you have any questions about me or my projects, you can use this handy form to contact me, or feel free to use the email and social media links, below.</p>
                         </div>
                         <ul class="contactSocials">
-                            <li><a href="mailto:kimberley.schubert@gmail.com"><i class="far fa-envelope"></a></i></li>
+                            <li><a href="mailto:kimberleycodes@gmail.com"><i class="far fa-envelope"></a></i></li>
                             <li><a href="https://www.linkedin.com/in/kimberley-schubert"><i class="fab fa-linkedin"></a></i></li>
                             <li><a href="https://twitter.com/KimberleyCodes"><i class="fab fa-twitter"></a></i></li>
                             <li><a href="https://github.com/K1MB3R98"><i class="fab fa-github"></a></i></li>
                         </ul>
                     </div>
-                    <form action="https://formspree.io/f/xrgjkjed" method="POST">
-                        <div class="formFlex">
-                            <p>I'll get back to you soon!</p>
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="text" id="name" placeholder="Name:">
-                            
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" id="email" placeholder="Email:">
-                        </div>
+                    <form id="contactForm" action="https://formspree.io/f/xrgjkjed" method="POST">
+                        <p>Leave me a message!</p>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" name="name" placeholder="Name:">
+                        
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email"  placeholder="Email:">
                         <label for="message" class="sr-only">Message me</label>
                         <textarea name="message" id="message" placeholder="Message:"></textarea>
-                        
-                        <button class="formButton" type="submit">Submit</button>
+                        <div class="g-recaptcha" data-sitekey="6Ldio6kfAAAAAK8ZuR6XVhw-R1vcL7RtK9Xnh4AX"></div>
+                        <button class="formButton" id="contactFormButton" type="submit">Submit</button>
+                        <p class="formMessage" id="contactFormStatus" ></p>
                     </form>
                 </div>
                 <div class="returnToTop">
@@ -302,7 +303,7 @@
         <div class="wrapper">
             <p>© Kimberley Schubert 2022</p>
             <ul class="contactIcons">
-                <li><a href="mailto:kimberley.schubert@gmail.com"><i class="far fa-envelope"></a></i></li>
+                <li><a href="mailto:kimberleycodes@gmail.com"><i class="far fa-envelope"></a></i></li>
                 <li><a href="https://www.linkedin.com/in/kimberley-schubert"><i class="fab fa-linkedin"></a></i></li>
                 <li><a href="https://twitter.com/KimberleyCodes"><i class="fab fa-twitter"></a></i></li>
                 <li><a href="https://github.com/K1MB3R98"><i class="fab fa-github"></a></i></li>

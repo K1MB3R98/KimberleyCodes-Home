@@ -855,6 +855,18 @@ form button:hover, form button:focus {
   background-color: rgb(255, 255, 255);
   border: 3px solid rgb(245, 151, 98);
 }
+form .formMessage {
+  color: rgb(21, 21, 20);
+  text-shadow: none;
+}
+
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
 
 footer {
   color: rgb(255, 255, 255);
@@ -888,7 +900,7 @@ footer .contactIcons li a {
   transition: 0.3s;
 }
 footer .contactIcons li a:hover, footer .contactIcons li a:focus {
-  color: rgb(88, 178, 32);
+  color: rgba(32, 178, 171, 0.644);
   font-size: 1.5rem;
   cursor: pointer;
 }

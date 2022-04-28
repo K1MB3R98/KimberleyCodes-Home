@@ -24,7 +24,7 @@ footer {
                 transition: 0.3s;
                 &:hover,
                 &:focus {
-                    color: $secondaryHighlight;
+                    color: $navPrimaryHighlight;
                     font-size: 1.5rem;
                     cursor: pointer;
                 }
