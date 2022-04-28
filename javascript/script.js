@@ -6,12 +6,12 @@ function menuOnClick() {
 }
 
 // Make the Contact Form recaptcha required
-window.onload = function () {
-    var el = document.getElementById('g-recaptcha-response');
-    if (el) {
-        el.setAttribute('required', 'required');
-    }
-}
+// window.onload = function () {
+//     var el = document.getElementById('g-recaptcha-response');
+//     if (el) {
+//         el.setAttribute('required', 'required');
+//     }
+// }
 
 // Contact Form Error Handling
 const form = document.getElementById("contactForm");
